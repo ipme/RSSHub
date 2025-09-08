@@ -105001,14 +105001,17 @@ export default {
         "location": "rule.ts",
         "module": () => import('@/routes/szse/rule.ts')
       },
-      "/disclosure/listed/notice": {
-        "path": "/disclosure/listed/notice",
+      "/disclosure/listed/notice/:query?": {
+        "path": "/disclosure/listed/notice/:query?",
         "name": "上市公司公告",
         "url": "www.szse.cn",
         "maintainers": [
           "nczitzk"
         ],
         "example": "/szse/disclosure/listed/notice",
+        "parameters": {
+          "query": "Filter options. can filte by \"stock\",\"beginDate\",\"endDate\". example:\"stock=000001&beginDate=2025-07-01&endDate=2025-08-30\""
+        },
         "categories": [
           "finance"
         ],
