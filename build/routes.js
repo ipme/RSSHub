@@ -74709,6 +74709,41 @@ export default {
   },
   "nankai": {
     "routes": {
+      "/ai/:type?": {
+        "path": "/ai/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/nankai/ai/zxdt",
+        "parameters": {
+          "type": "栏目类型（若为空则默认为\"最新动态\"）"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ai.nankai.edu.cn",
+              "ai.nankai.edu.cn/xwzx/:type.htm"
+            ],
+            "target": "/ai/:type?"
+          }
+        ],
+        "name": "人工智能学院",
+        "maintainers": [
+          "LMark"
+        ],
+        "description": "| 最新动态 | 学院公告 | 学生之窗 | 科研信息 | 本科生教学 | 党团园地 | 研究生招生 | 研究生教学 | 就业信息 | 国际交流 |\n| -------- | -------- | -------- | -------- | ---------- | -------- | ---------- | ---------- | -------- | -------- |\n| zxdt     | xygg     | xszc     | kyxx     | bksjx      | dtyd     | yjszs      | yjsjx      | jyxx     | gjjl     |",
+        "url": "ai.nankai.edu.cn",
+        "location": "ai-notice.ts",
+        "module": () => import('@/routes/nankai/ai-notice.ts')
+      },
       "/cc/:type?": {
         "path": "/cc/:type?",
         "categories": [
