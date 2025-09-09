@@ -93113,6 +93113,462 @@ export default {
     "url": "scvtc.edu.cn",
     "lang": "zh-CN"
   },
+  "sdo": {
+    "routes": {
+      "/ff14risingstones/posts/:pid?/:type?": {
+        "path": "/ff14risingstones/posts/:pid?/:type?",
+        "example": "/sdo/ff14risingstones/posts/all/hot",
+        "name": "帖子",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "parameters": {
+          "pid": {
+            "description": "分区id，默认显示所有分区，可通过 `,` 拼接多个分区 id 进行筛选",
+            "default": "all",
+            "options": [
+              {
+                "label": "全部",
+                "value": "all"
+              },
+              {
+                "value": "34",
+                "label": "冒险者行会"
+              },
+              {
+                "value": "52",
+                "label": "生活杂谈"
+              },
+              {
+                "value": "38",
+                "label": "同人创作"
+              },
+              {
+                "value": "36",
+                "label": "剧情讨论"
+              },
+              {
+                "value": "51",
+                "label": "建议和BUG反馈"
+              },
+              {
+                "value": "37",
+                "label": "游戏记录"
+              },
+              {
+                "value": "35",
+                "label": "举手提问"
+              },
+              {
+                "value": "74",
+                "label": "版务专区"
+              },
+              {
+                "value": "75",
+                "label": "官方讯息"
+              }
+            ]
+          },
+          "type": {
+            "description": "帖文类型，默认不做筛选",
+            "options": [
+              {
+                "label": "置顶",
+                "value": "top"
+              },
+              {
+                "label": "精华",
+                "value": "refine"
+              },
+              {
+                "label": "周热门",
+                "value": "hot"
+              }
+            ]
+          }
+        },
+        "location": "ff14risingstones/posts.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/posts.ts')
+      },
+      "/ff14risingstones/strats/:pid?/:type?": {
+        "path": "/ff14risingstones/strats/:pid?/:type?",
+        "example": "/sdo/ff14risingstones/strats/1,2/refine",
+        "name": "攻略",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "parameters": {
+          "pid": {
+            "description": "分区id，默认显示所有分区，可通过 `,` 拼接多个分区 id 进行筛选",
+            "default": "all",
+            "options": [
+              {
+                "label": "全部",
+                "value": "all"
+              },
+              {
+                "label": "新手指引",
+                "value": "1"
+              },
+              {
+                "label": "副本攻略",
+                "value": "2"
+              },
+              {
+                "label": "战斗职业",
+                "value": "3"
+              },
+              {
+                "label": "PVP",
+                "value": "4"
+              },
+              {
+                "label": "生产采集",
+                "value": "5"
+              },
+              {
+                "label": "投影外观",
+                "value": "6"
+              },
+              {
+                "label": "房屋装修",
+                "value": "7"
+              },
+              {
+                "label": "骑士",
+                "value": "8"
+              },
+              {
+                "label": "武僧",
+                "value": "9"
+              },
+              {
+                "label": "战士",
+                "value": "10"
+              },
+              {
+                "label": "龙骑士",
+                "value": "11"
+              },
+              {
+                "label": "吟游诗人",
+                "value": "12"
+              },
+              {
+                "label": "白魔法师",
+                "value": "13"
+              },
+              {
+                "label": "黑魔法师",
+                "value": "14"
+              },
+              {
+                "label": "召唤师",
+                "value": "15"
+              },
+              {
+                "label": "学者",
+                "value": "16"
+              },
+              {
+                "label": "忍者",
+                "value": "17"
+              },
+              {
+                "label": "机工士",
+                "value": "18"
+              },
+              {
+                "label": "暗黑骑士",
+                "value": "19"
+              },
+              {
+                "label": "占星术士",
+                "value": "20"
+              },
+              {
+                "label": "武士",
+                "value": "21"
+              },
+              {
+                "label": "赤魔法师",
+                "value": "22"
+              },
+              {
+                "label": "青魔法师",
+                "value": "23"
+              },
+              {
+                "label": "绝枪战士",
+                "value": "24"
+              },
+              {
+                "label": "舞者",
+                "value": "25"
+              },
+              {
+                "label": "钐镰客",
+                "value": "26"
+              },
+              {
+                "label": "贤者",
+                "value": "27"
+              },
+              {
+                "label": "猫魅族",
+                "value": "28"
+              },
+              {
+                "label": "拉拉菲尔族",
+                "value": "29"
+              },
+              {
+                "label": "人族",
+                "value": "30"
+              },
+              {
+                "label": "精灵族",
+                "value": "31"
+              },
+              {
+                "label": "维埃拉族",
+                "value": "32"
+              },
+              {
+                "label": "敖龙族",
+                "value": "59"
+              },
+              {
+                "label": "硌狮族",
+                "value": "60"
+              },
+              {
+                "label": "鲁加族",
+                "value": "61"
+              },
+              {
+                "label": "无人岛",
+                "value": "62"
+              },
+              {
+                "label": "特殊场景探索",
+                "value": "63"
+              },
+              {
+                "label": "游戏资讯",
+                "value": "64"
+              },
+              {
+                "label": "内容考据",
+                "value": "65"
+              },
+              {
+                "label": "摄影截图",
+                "value": "66"
+              },
+              {
+                "label": "金碟游乐场",
+                "value": "67"
+              },
+              {
+                "label": "综合",
+                "value": "68"
+              },
+              {
+                "label": "其他",
+                "value": "69"
+              },
+              {
+                "label": "国际服资讯翻译",
+                "value": "70"
+              },
+              {
+                "label": "游戏资讯整理",
+                "value": "71"
+              },
+              {
+                "label": "其他",
+                "value": "72"
+              }
+            ]
+          },
+          "type": {
+            "description": "攻略类型，默认不做筛选",
+            "options": [
+              {
+                "label": "置顶",
+                "value": "top"
+              },
+              {
+                "label": "精华",
+                "value": "refine"
+              }
+            ]
+          }
+        },
+        "location": "ff14risingstones/strats.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/strats.ts')
+      },
+      "/ff14risingstones/timeline": {
+        "path": "/ff14risingstones/timeline",
+        "example": "/sdo/ff14risingstones/timeline",
+        "name": "时间线",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "location": "ff14risingstones/timeline.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/timeline.ts')
+      },
+      "/ff14risingstones/user-dynamics/:uid": {
+        "path": "/ff14risingstones/user-dynamics/:uid",
+        "example": "/sdo/ff14risingstones/user-dynamics/10001226",
+        "name": "用户动态",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "location": "ff14risingstones/user-dynamics.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/user-dynamics.ts')
+      },
+      "/ff14risingstones/user-posts/:uid": {
+        "path": "/ff14risingstones/user-posts/:uid",
+        "example": "/sdo/ff14risingstones/user-posts/10001226",
+        "name": "用户发帖",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "location": "ff14risingstones/user-posts.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/user-posts.ts')
+      },
+      "/ff14risingstones/user-resently/:uid": {
+        "path": "/ff14risingstones/user-resently/:uid",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/sdo/ff14risingstones/user-resently/10008214",
+        "name": "游戏近况",
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "location": "ff14risingstones/user-resently.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/user-resently.ts')
+      },
+      "/ff14risingstones/user-strats/:uid": {
+        "path": "/ff14risingstones/user-strats/:uid",
+        "example": "/sdo/ff14risingstones/user-strats/10001226",
+        "name": "用户攻略",
+        "categories": [
+          "bbs"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "SDO_FF14RISINGSTONES",
+              "description": "值为 Cookie 头中 ff14risingstones 值"
+            },
+            {
+              "name": "SDO_UA",
+              "description": "值为与在网页端获取 Cookie 时相匹配的 User-Agent 值"
+            }
+          ]
+        },
+        "location": "ff14risingstones/user-strats.ts",
+        "module": () => import('@/routes/sdo/ff14risingstones/user-strats.ts')
+      }
+    },
+    "name": "盛趣游戏在线",
+    "url": "sdo.com",
+    "lang": "zh-CN"
+  },
   "sdu": {
     "routes": {
       "/cmse/:type?": {
