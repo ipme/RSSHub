@@ -8890,7 +8890,8 @@
       "/information/:type?": {
         "path": "/information/:type?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/aliresearch/information",
         "parameters": {
@@ -48218,8 +48219,7 @@
       "/npc/:caty": {
         "path": "/npc/:caty",
         "categories": [
-          "government",
-          "popular"
+          "government"
         ],
         "example": "/gov/npc/c183",
         "parameters": {
@@ -119189,50 +119189,6 @@
     "name": "喜马拉雅",
     "apiRoutes": {},
     "url": "ximalaya.com",
-    "lang": "zh-CN"
-  },
-  "xinhuanet": {
-    "routes": {
-      "/app": {
-        "path": "/app",
-        "name": "客户端",
-        "url": "app.xinhuanet.com",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/xinhuanet/app",
-        "description": "",
-        "categories": [
-          "traditional-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "app.xinhuanet.com"
-            ],
-            "target": "/app"
-          }
-        ],
-        "location": "app.ts",
-        "module": "() => import('@/routes/xinhuanet/app.ts')"
-      }
-    },
-    "name": "新华网",
-    "apiRoutes": {},
-    "url": "xinhuanet.com",
-    "categories": [
-      "traditional-media"
-    ],
-    "description": "",
     "lang": "zh-CN"
   },
   "xinpianchang": {
