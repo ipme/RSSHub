@@ -8890,8 +8890,7 @@ export default {
       "/information/:type?": {
         "path": "/information/:type?",
         "categories": [
-          "new-media",
-          "popular"
+          "new-media"
         ],
         "example": "/aliresearch/information",
         "parameters": {
@@ -48219,7 +48218,8 @@ export default {
       "/npc/:caty": {
         "path": "/npc/:caty",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "example": "/gov/npc/c183",
         "parameters": {
@@ -90318,7 +90318,11 @@ export default {
           "requireConfig": [
             {
               "name": "HEFENG_KEY",
-              "description": ""
+              "description": "QWeather API KEY"
+            },
+            {
+              "name": "HEFENG_API_HOST",
+              "description": "This is required after 2026/01/01: https://blog.qweather.com/announce/public-api-domain-change-to-api-host/"
             }
           ],
           "requirePuppeteer": false,
@@ -90350,6 +90354,10 @@ export default {
             {
               "name": "HEFENG_KEY",
               "description": "访问 `https://www.qweather.com/` 注册开发 API Key。"
+            },
+            {
+              "name": "HEFENG_API_HOST",
+              "description": "This is required after 2026/01/01: https://blog.qweather.com/announce/public-api-domain-change-to-api-host/"
             }
           ],
           "requirePuppeteer": false,
