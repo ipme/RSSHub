@@ -111811,15 +111811,12 @@ export default {
   },
   "uber": {
     "routes": {
-      "/blog/:maxPage?": {
-        "path": "/blog/:maxPage?",
+      "/blog/:compat?": {
+        "path": "/blog/:compat?",
         "categories": [
           "blog"
         ],
         "example": "/uber/blog",
-        "parameters": {
-          "maxPage": "max number of pages to retrieve, default to 1 page at most"
-        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -111831,8 +111828,7 @@ export default {
         "radar": [
           {
             "source": [
-              "www.uber.com/:language/blog/engineering",
-              "www.uber.com/:language/blog"
+              "www.uber.com/:language/blog/engineering"
             ],
             "target": "/blog"
           }
@@ -111841,7 +111837,11 @@ export default {
         "maintainers": [
           "hulb"
         ],
-        "url": "www.uber.com/blog/pittsburgh/engineering",
+        "url": "www.uber.com/en-HK/blog/engineering",
+        "description": "The English blog on any of Uber's regional sites (e.g., www.uber.com/en-JP/blog) is the same engineering blog provided by this route, so language selection is not supported. This route is not for the public news blog on specific regional sites (e.g., www.uber.com/ja-JP/blog).",
+        "zh": {
+          "description": "uber的任何区域站点的英文blog（例如www.uber.com/en-JP/blog）都是相同的内容，正是本路由提供的engineering blog，因此本路由不提供语言选择；本路由不是uber在特定区域站点的公开新闻blog（例如www.uber.com/ja-JP/blog)"
+        },
         "location": "blog.ts",
         "module": () => import('@/routes/uber/blog.ts')
       }
