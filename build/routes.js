@@ -6137,6 +6137,45 @@ export default {
     "url": "acg17.com",
     "lang": "zh-CN"
   },
+  "acgvinyl": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "anime"
+        ],
+        "example": "/news",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.acgvinyl.com"
+            ],
+            "target": "/news"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "williamgateszhao"
+        ],
+        "url": "www.acgvinyl.com/col.jsp?id=103",
+        "zh": {
+          "name": "黑胶新闻"
+        },
+        "location": "news.ts",
+        "module": () => import('@/routes/acgvinyl/news.ts')
+      }
+    },
+    "name": "ACG Vinyl - 黑胶",
+    "url": "www.acgvinyl.com"
+  },
   "acpaa": {
     "routes": {
       "/:id?/:name?": {
@@ -8890,7 +8929,8 @@ export default {
       "/information/:type?": {
         "path": "/information/:type?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/aliresearch/information",
         "parameters": {
@@ -48218,8 +48258,7 @@ export default {
       "/npc/:caty": {
         "path": "/npc/:caty",
         "categories": [
-          "government",
-          "popular"
+          "government"
         ],
         "example": "/gov/npc/c183",
         "parameters": {
