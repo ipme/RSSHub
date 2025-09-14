@@ -92332,6 +92332,145 @@ export default {
   },
   "samrdprc": {
     "routes": {
+      "/:id{.+}?": {
+        "path": "/:id{.+}?",
+        "name": "栏目",
+        "url": "www.samrdprc.org.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/samrdprc/xwdt/gzdt",
+        "parameters": {
+          "id": {
+            "description": "栏目 id，默认为 `xwdt/gzdt`，即国内新闻，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "新闻动态",
+                "value": "xwdt/gzdt"
+              },
+              {
+                "label": "网站公告",
+                "value": "wzgg"
+              },
+              {
+                "label": "汽车召回",
+                "value": "qczh"
+              },
+              {
+                "label": "消费品召回",
+                "value": "xfpzh"
+              },
+              {
+                "label": "技术报告",
+                "value": "yjgz/jsyj"
+              },
+              {
+                "label": "SAC/TC463",
+                "value": "yjgz/sactc"
+              },
+              {
+                "label": "研究动态",
+                "value": "yjgz/yjfx"
+              },
+              {
+                "label": "安全教育",
+                "value": "aqjy"
+              },
+              {
+                "label": "国内法规",
+                "value": "flfg/gnfg"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n订阅 [网站公告](https://www.samrdprc.org.cn/wzgg/)，其源网址为 `https://www.samrdprc.org.cn/wzgg/`，请参考该 URL 指定部分构成参数，此时路由为 [`/samrdprc/wzgg`](https://rsshub.app/samrdprc/wzgg)。\n:::\n\n<details>\n  <summary>更多分类</summary>\n\n  #### 网站首页\n\n  | [新闻动态](https://www.samrdprc.org.cn/xwdt/gzdt/) | [网站公告](https://www.samrdprc.org.cn/wzgg/) | [汽车召回](https://www.samrdprc.org.cn/qczh/) | [消费品召回](https://www.samrdprc.org.cn/xfpzh/) |\n  | -------------------------------------------------- | --------------------------------------------- | --------------------------------------------- | ------------------------------------------------ |\n  | [xwdt/gzdt](https://rsshub.app/samrdprc/xwdt/gzdt) | [wzgg](https://rsshub.app/samrdprc/wzgg)      | [qczh](https://rsshub.app/samrdprc/qczh)      | [xfpzh](https://rsshub.app/samrdprc/xfpzh)       |\n\n  #### 科学研究\n\n  | [技术报告](https://www.samrdprc.org.cn/yjgz/jsyj/) | [SAC/TC463](https://www.samrdprc.org.cn/yjgz/sactc/) | [研究动态](https://www.samrdprc.org.cn/yjgz/yjfx/) |\n  | -------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------- |\n  | [yjgz/jsyj](https://rsshub.app/samrdprc/yjgz/jsyj) | [yjgz/sactc](https://rsshub.app/samrdprc/yjgz/sactc) | [yjgz/yjfx](https://rsshub.app/samrdprc/yjgz/yjfx) |\n\n  #### 安全教育\n\n  | [安全教育](https://www.samrdprc.org.cn/aqjy/) |\n  | --------------------------------------------- |\n  | [aqjy](https://rsshub.app/samrdprc/aqjy)      |\n\n  #### 法律法规\n\n  | [国内法规](https://www.samrdprc.org.cn/flfg/gnfg/) |\n  | -------------------------------------------------- |\n  | [flfg/gnfg](https://rsshub.app/samrdprc/flfg/gnfg) |\n</details>\n",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.samrdprc.org.cn/:id"
+            ],
+            "target": "/:id"
+          },
+          {
+            "title": "网站首页 - 新闻动态",
+            "source": [
+              "www.samrdprc.org.cn/xwdt/gzdt/"
+            ],
+            "target": "/xwdt/gzdt"
+          },
+          {
+            "title": "网站首页 - 网站公告",
+            "source": [
+              "www.samrdprc.org.cn/wzgg/"
+            ],
+            "target": "/wzgg"
+          },
+          {
+            "title": "网站首页 - 汽车召回",
+            "source": [
+              "www.samrdprc.org.cn/qczh/"
+            ],
+            "target": "/qczh"
+          },
+          {
+            "title": "网站首页 - 消费品召回",
+            "source": [
+              "www.samrdprc.org.cn/xfpzh/"
+            ],
+            "target": "/xfpzh"
+          },
+          {
+            "title": "科学研究 - 技术报告",
+            "source": [
+              "www.samrdprc.org.cn/yjgz/jsyj/"
+            ],
+            "target": "/yjgz/jsyj"
+          },
+          {
+            "title": "科学研究 - SAC/TC463",
+            "source": [
+              "www.samrdprc.org.cn/yjgz/sactc/"
+            ],
+            "target": "/yjgz/sactc"
+          },
+          {
+            "title": "科学研究 - 研究动态",
+            "source": [
+              "www.samrdprc.org.cn/yjgz/yjfx/"
+            ],
+            "target": "/yjgz/yjfx"
+          },
+          {
+            "title": "安全教育 - 安全教育",
+            "source": [
+              "www.samrdprc.org.cn/aqjy/"
+            ],
+            "target": "/aqjy"
+          },
+          {
+            "title": "法律法规 - 国内法规",
+            "source": [
+              "www.samrdprc.org.cn/flfg/gnfg/"
+            ],
+            "target": "/flfg/gnfg"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": () => import('@/routes/samrdprc/index.ts')
+      },
       "/news/:type1/:type2": {
         "path": "/news/:type1/:type2",
         "categories": [
@@ -92367,7 +92506,8 @@ export default {
         "module": () => import('@/routes/samrdprc/news.ts')
       }
     },
-    "name": "国家市场监督管理总局",
+    "name": "国家市场监督管理总局缺陷产品管理中心",
+    "apiRoutes": {},
     "url": "www.samrdprc.org.cn",
     "lang": "zh-CN"
   },
