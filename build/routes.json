@@ -75407,6 +75407,41 @@
         "location": "cc-notice.ts",
         "module": "() => import('@/routes/nankai/cc-notice.ts')"
       },
+      "/graduate/:type?": {
+        "path": "/graduate/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/nankai/graduate/zxdt",
+        "parameters": {
+          "type": "栏目编号（若为空则默认为\"zxdt\"）"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "graduate.nankai.edu.cn",
+              "graduate.nankai.edu.cn/:type/list.htm"
+            ],
+            "target": "/graduate/:type?"
+          }
+        ],
+        "name": "研究生院",
+        "maintainers": [
+          "ladeng07"
+        ],
+        "description": "| 最新动态 | 综合信息 | 招生工作 | 培养管理 | 国际交流 | 学科建设 | 学位管理 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| zxdt     | 82       | 83       | 84       | 85       | 86       | 87       |",
+        "url": "graduate.nankai.edu.cn",
+        "location": "graduate-notice.ts",
+        "module": "() => import('@/routes/nankai/graduate-notice.ts')"
+      },
       "/jwc": {
         "path": "/jwc",
         "categories": [
