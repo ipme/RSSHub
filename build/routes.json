@@ -66382,6 +66382,41 @@
     "url": "www.lens.xyz",
     "lang": "en"
   },
+  "letterboxd": {
+    "routes": {
+      "/:username/watchlist": {
+        "path": "/:username/watchlist",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/letterboxd/matthew/watchlist",
+        "parameters": {
+          "username": "Letterboxd username"
+        },
+        "radar": [
+          {
+            "source": [
+              "letterboxd.com/:username/watchlist/"
+            ]
+          }
+        ],
+        "name": "User Watchlist",
+        "maintainers": [
+          "johan456789"
+        ],
+        "url": "letterboxd.com",
+        "location": "index.ts",
+        "module": "() => import('@/routes/letterboxd/index.ts')"
+      }
+    },
+    "name": "Letterboxd",
+    "apiRoutes": {},
+    "url": "letterboxd.com",
+    "categories": [
+      "social-media"
+    ],
+    "lang": "en"
+  },
   "lfsyd": {
     "routes": {
       "/home": {
@@ -107307,6 +107342,39 @@
         "location": "blog.ts",
         "module": "() => import('@/routes/telegram/blog.ts')"
       },
+      "/channel/:entityName/:messageId": {
+        "path": "/channel/:entityName/:messageId",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/channel/telegram/1233",
+        "parameters": {
+          "entityName": "entity name",
+          "messageId": "message id"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "TELEGRAM_SESSION",
+              "optional": false,
+              "description": "Telegram API Authentication"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [],
+        "name": "Channel Media",
+        "maintainers": [
+          "synchrone"
+        ],
+        "description": "\n::: tip\n  Serves telegram media like pictures, video or files.\n:::\n",
+        "location": "channel-media.ts",
+        "module": "() => import('@/routes/telegram/channel-media.ts')"
+      },
       "/channel/:username/:routeParams?": {
         "path": "/channel/:username/:routeParams?",
         "categories": [
@@ -107406,6 +107474,69 @@
         ],
         "location": "stickerpack.ts",
         "module": "() => import('@/routes/telegram/stickerpack.ts')"
+      },
+      "/stories/:username/:story?": {
+        "path": "/stories/:username/:story?",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/stories/sandboxuser1",
+        "parameters": {
+          "username": "entity name",
+          "story": "story"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "TELEGRAM_SESSION",
+              "optional": false,
+              "description": "Telegram API Authentication"
+            },
+            {
+              "name": "TELEGRAM_API_ID",
+              "optional": true,
+              "description": "Telegram API ID"
+            },
+            {
+              "name": "TELEGRAM_API_HASH",
+              "optional": true,
+              "description": "Telegram API Hash"
+            },
+            {
+              "name": "TELEGRAM_MAX_CONCURRENT_DOWNLOADS",
+              "optional": true,
+              "description": "Telegram Max Concurrent Downloads"
+            },
+            {
+              "name": "TELEGRAM_PROXY_HOST",
+              "optional": true,
+              "description": "Telegram Proxy Host"
+            },
+            {
+              "name": "TELEGRAM_PROXY_PORT",
+              "optional": true,
+              "description": "Telegram Proxy Port"
+            },
+            {
+              "name": "TELEGRAM_PROXY_SECRET",
+              "optional": true,
+              "description": "Telegram Proxy Secret"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [],
+        "name": "Stories",
+        "maintainers": [
+          "synchrone"
+        ],
+        "description": "",
+        "location": "stories.ts",
+        "module": "() => import('@/routes/telegram/stories.ts')"
       }
     },
     "name": "Telegram",
