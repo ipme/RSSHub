@@ -88137,7 +88137,7 @@ export default {
             ]
           }
         ],
-        "name": "Today Popular",
+        "name": "Top Products Launching Today",
         "maintainers": [
           "miaoyafeng",
           "Fatpandac"
