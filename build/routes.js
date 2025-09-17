@@ -90716,6 +90716,46 @@ export default {
     "url": "qweather.com",
     "lang": "zh-CN"
   },
+  "qwenlm": {
+    "routes": {
+      "/blog/:lang?": {
+        "path": "/blog/:lang?",
+        "categories": [
+          "blog"
+        ],
+        "example": "/qwenlm/blog/zh",
+        "parameters": {
+          "lang": "Blog language"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "qwenlm.github.io/blog/",
+              "qwenlm.github.io/:lang/blog/"
+            ],
+            "target": "/qwenlm/blog/:lang"
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "Kjasn"
+        ],
+        "location": "blog.ts",
+        "module": () => import('@/routes/qwenlm/blog.ts')
+      }
+    },
+    "name": "Qwen Blog",
+    "apiRoutes": {},
+    "url": "qwenlm.github.io"
+  },
   "qztc": {
     "routes": {
       "/home/:type": {
@@ -107364,12 +107404,12 @@ export default {
         "location": "blog.ts",
         "module": () => import('@/routes/telegram/blog.ts')
       },
-      "/channel/:entityName/:messageId": {
-        "path": "/channel/:entityName/:messageId",
+      "/media/:entityName/:messageId": {
+        "path": "/media/:entityName/:messageId",
         "categories": [
           "social-media"
         ],
-        "example": "/channel/telegram/1233",
+        "example": "/telegram/media/telegram/1233",
         "parameters": {
           "entityName": "entity name",
           "messageId": "message id"
@@ -107502,7 +107542,7 @@ export default {
         "categories": [
           "social-media"
         ],
-        "example": "/stories/sandboxuser1",
+        "example": "/telegram/stories/telegram",
         "parameters": {
           "username": "entity name",
           "story": "story"
