@@ -44756,6 +44756,28 @@
         "location": "fonts.ts",
         "module": "() => import('@/routes/google/fonts.ts')"
       },
+      "/jules/changelog": {
+        "path": "/jules/changelog",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/google/jules/changelog",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Jules Changelog",
+        "url": "jules.google/docs/changelog/",
+        "maintainers": [
+          "johan456789"
+        ],
+        "location": "jules.ts",
+        "module": "() => import('@/routes/google/jules.ts')"
+      },
       "/news/:category/:locale": {
         "path": "/news/:category/:locale",
         "categories": [
