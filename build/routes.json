@@ -102223,8 +102223,129 @@
     "routes": {
       "/blog/:category{.+}?": {
         "path": "/blog/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "Blog",
+        "url": "surfshark.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/surfshark/blog",
+        "parameters": {
+          "category": {
+            "description": "Category, All by default",
+            "options": [
+              {
+                "label": "All",
+                "value": ""
+              },
+              {
+                "label": "Cybersecurity",
+                "value": "cybersecurity"
+              },
+              {
+                "label": "All things VPN",
+                "value": "all-things-vpn"
+              },
+              {
+                "label": "Internet censorship",
+                "value": "internet-censorship"
+              },
+              {
+                "label": "Entertainment",
+                "value": "entertainment"
+              },
+              {
+                "label": "Expert Insights",
+                "value": "expert-insights"
+              },
+              {
+                "label": "Video",
+                "value": "video"
+              },
+              {
+                "label": "News",
+                "value": "news"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Cybersecurity](https://surfshark.com/blog/cybersecurity), where the source URL is `https://surfshark.com/blog/cybersecurity`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/surfshark/blog/cybersecurity`](https://rsshub.app/surfshark/blog/cybersecurity).\n:::\n\n<details>\n  <summary>More categories</summary>\n\n| Category                                                              | ID                                                                           |\n| --------------------------------------------------------------------- | ---------------------------------------------------------------------------- |\n| [All](https://surfshark.com/blog)                                     | (empty)                                                                      |\n| [Cybersecurity](https://surfshark.com/blog/cybersecurity)             | [cybersecurity](https://rsshub.app/surfshark/blog/cybersecurity)             |\n| [All things VPN](https://surfshark.com/blog/all-things-vpn)           | [all-things-vpn](https://rsshub.app/surfshark/blog/all-things-vpn)           |\n| [Internet censorship](https://surfshark.com/blog/internet-censorship) | [internet-censorship](https://rsshub.app/surfshark/blog/internet-censorship) |\n| [Entertainment](https://surfshark.com/blog/entertainment)             | [entertainment](https://rsshub.app/surfshark/blog/entertainment)             |\n| [Expert Insights](https://surfshark.com/blog/expert-insights)         | [expert-insights](https://rsshub.app/surfshark/blog/expert-insights)         |\n| [Video](https://surfshark.com/blog/video)                             | [video](https://rsshub.app/surfshark/blog/video)                             |\n| [News](https://surfshark.com/blog/news)                               | [news](https://rsshub.app/surfshark/blog/news)                               |\n\n</details>\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "surfshark.com/blog/:category"
+            ],
+            "target": "/blog/:category"
+          },
+          {
+            "title": "All",
+            "source": [
+              "surfshark.com/blog"
+            ],
+            "target": "/blog"
+          },
+          {
+            "title": "Cybersecurity",
+            "source": [
+              "surfshark.com/blog/cybersecurity"
+            ],
+            "target": "/blog/cybersecurity"
+          },
+          {
+            "title": "All things VPN",
+            "source": [
+              "surfshark.com/blog/all-things-vpn"
+            ],
+            "target": "/blog/all-things-vpn"
+          },
+          {
+            "title": "Internet censorship",
+            "source": [
+              "surfshark.com/blog/internet-censorship"
+            ],
+            "target": "/blog/internet-censorship"
+          },
+          {
+            "title": "Entertainment",
+            "source": [
+              "surfshark.com/blog/entertainment"
+            ],
+            "target": "/blog/entertainment"
+          },
+          {
+            "title": "Expert Insights",
+            "source": [
+              "surfshark.com/blog/expert-insights"
+            ],
+            "target": "/blog/expert-insights"
+          },
+          {
+            "title": "Video",
+            "source": [
+              "surfshark.com/blog/video"
+            ],
+            "target": "/blog/video"
+          },
+          {
+            "title": "News",
+            "source": [
+              "surfshark.com/blog/news"
+            ],
+            "target": "/blog/news"
+          }
+        ],
+        "view": 0,
         "location": "blog.ts",
         "module": "() => import('@/routes/surfshark/blog.ts')"
       }
