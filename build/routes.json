@@ -93379,6 +93379,43 @@
     "description": "Scientific American is the essential guide to the most awe-inspiring advances in science and technology, explaining how they change our understanding of the world and shape our lives.",
     "lang": "en"
   },
+  "scitechvista": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "government"
+        ],
+        "example": "/scitechvista",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "scitechvista.nat.gov.tw/"
+            ]
+          }
+        ],
+        "name": "最新文章",
+        "maintainers": [
+          "johan456789"
+        ],
+        "url": "scitechvista.nat.gov.tw",
+        "location": "index.ts",
+        "module": "() => import('@/routes/scitechvista/index.ts')"
+      }
+    },
+    "name": "科技大觀園",
+    "apiRoutes": {},
+    "url": "scitechvista.nat.gov.tw",
+    "lang": "zh-TW"
+  },
   "scmp": {
     "routes": {
       "/coronavirus": {
