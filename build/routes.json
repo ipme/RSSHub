@@ -54757,6 +54757,43 @@
     "url": "huggingface.co",
     "lang": "en"
   },
+  "huijin-inv": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "finance"
+        ],
+        "example": "/huijin-inv/news",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.huijin-inv.cn/"
+            ]
+          }
+        ],
+        "name": "资讯中心",
+        "maintainers": [
+          "la3rence"
+        ],
+        "description": "中央汇金投资有限责任公司 - 资讯中心",
+        "location": "news.ts",
+        "module": "() => import('@/routes/huijin-inv/news.ts')"
+      }
+    },
+    "name": "中央汇金投资有限责任公司",
+    "url": "www.huijin-inv.cn",
+    "lang": "zh-CN"
+  },
   "hunanpea": {
     "routes": {
       "/rsks/:guid": {
