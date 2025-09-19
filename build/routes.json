@@ -14631,9 +14631,53 @@
         "path": "/learningenglish/:channel?",
         "example": "/bbc/learningenglish/take-away-english",
         "parameters": {
-          "channel": "channel, default to `take-away-english`"
+          "channel": {
+            "description": "英语学习分类栏目",
+            "options": [
+              {
+                "value": "take-away-english",
+                "label": "随身英语"
+              },
+              {
+                "value": "authentic-real-english",
+                "label": "地道英语"
+              },
+              {
+                "value": "media-english",
+                "label": "媒体英语"
+              },
+              {
+                "value": "lingohack",
+                "label": "英语大破解"
+              },
+              {
+                "value": "english-in-a-minute",
+                "label": "一分钟英语"
+              },
+              {
+                "value": "phrasal-verbs",
+                "label": "短语动词"
+              },
+              {
+                "value": "todays-phrase",
+                "label": "今日短语"
+              },
+              {
+                "value": "q-and-a",
+                "label": "你问我答"
+              },
+              {
+                "value": "english-at-work",
+                "label": "白领英语"
+              },
+              {
+                "value": "storytellers",
+                "label": "亲子英语故事"
+              }
+            ],
+            "default": "take-away-english"
+          }
         },
-        "description": "| 随身英语 | 地道英语 | 媒体英语 | 英语大破解 | 一分钟英语 |\n| -------- | -------- | -------- | -------- | -------- |\n| take-away-english | authentic-real-english | media-english | lingohack | english-in-a-minute |\n\n| 短语动词 | 今日短语 | 你问我答 | 白领英语 | 亲子英语故事 |\n| -------- | -------- | -------- | -------- | -------- |\n| phrasal-verbs | todays-phrase | q-and-a | english-at-work | storytellers |",
         "location": "learningenglish.ts",
         "module": "() => import('@/routes/bbc/learningenglish.ts')"
       }
@@ -42093,17 +42137,40 @@
         "location": "news.ts",
         "module": "() => import('@/routes/gdufs/news.ts')"
       },
-      "/xwxy-news": {
-        "path": "/xwxy-news",
+      "/xwxy/:category?": {
+        "path": "/xwxy/:category?",
         "categories": [
           "university"
         ],
-        "example": "/gdufs/xwxy-news",
-        "parameters": {},
+        "example": "/gdufs/xwxy/news",
+        "parameters": {
+          "category": {
+            "description": "分类，默认为 `news`",
+            "options": [
+              {
+                "label": "学院新闻",
+                "value": "news"
+              },
+              {
+                "label": "通知",
+                "value": "notices"
+              },
+              {
+                "label": "公告",
+                "value": "announcements"
+              },
+              {
+                "label": "媒体聚焦",
+                "value": "media"
+              }
+            ]
+          }
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
           "antiCrawler": false,
+          "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -42113,16 +42180,35 @@
             "source": [
               "xwxy.gdufs.edu.cn/xwzx/xyxw",
               "xwxy.gdufs.edu.cn/"
-            ]
+            ],
+            "target": "/xwxy/news"
+          },
+          {
+            "source": [
+              "xwxy.gdufs.edu.cn/xwzx/tzgg/tz"
+            ],
+            "target": "/xwxy/notices"
+          },
+          {
+            "source": [
+              "xwxy.gdufs.edu.cn/xwzx/tzgg/gg"
+            ],
+            "target": "/xwxy/announcements"
+          },
+          {
+            "source": [
+              "xwxy.gdufs.edu.cn/xwzx/mtjj"
+            ],
+            "target": "/xwxy/media"
           }
         ],
-        "name": "新闻学院-学院新闻",
+        "name": "新闻学院-新闻中心",
         "maintainers": [
           "gz4zzxc"
         ],
-        "url": "xwxy.gdufs.edu.cn/xwzx/xyxw",
-        "location": "xwxy/xwxy-news.ts",
-        "module": "() => import('@/routes/gdufs/xwxy/xwxy-news.ts')"
+        "url": "xwxy.gdufs.edu.cn",
+        "location": "xwxy/index.ts",
+        "module": "() => import('@/routes/gdufs/xwxy/index.ts')"
       }
     },
     "name": "广东外语外贸大学",
