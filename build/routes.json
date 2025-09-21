@@ -8929,8 +8929,7 @@
       "/information/:type?": {
         "path": "/information/:type?",
         "categories": [
-          "new-media",
-          "popular"
+          "new-media"
         ],
         "example": "/aliresearch/information",
         "parameters": {
@@ -16347,7 +16346,8 @@
           "embed": "默认为开启内嵌视频, 任意值为关闭"
         },
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "location": "video-all.ts",
         "module": "() => import('@/routes/bilibili/video-all.ts')"
@@ -28480,6 +28480,40 @@
     "name": "Crossbell",
     "url": "crossbell.io",
     "lang": "en"
+  },
+  "crush": {
+    "routes": {
+      "/pages/:id": {
+        "path": "/pages/:id",
+        "name": "匿名投稿頁面",
+        "url": "www.crush.ninja",
+        "maintainers": [
+          "Tsuyumi25"
+        ],
+        "example": "/crush/pages/141719909033861",
+        "parameters": {
+          "id": {
+            "description": "頁面 ID 或代稱，例如 `141719909033861` 或 `awkward87poland`"
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "www.crush.ninja/:locale/pages/:id"
+            ],
+            "target": "/pages/:id"
+          }
+        ],
+        "location": "index.ts",
+        "module": "() => import('@/routes/crush/index.ts')"
+      }
+    },
+    "name": "CrushNinja",
+    "apiRoutes": {},
+    "url": "www.crush.ninja",
+    "categories": [
+      "social-media"
+    ]
   },
   "cryptoslate": {
     "routes": {
@@ -118567,6 +118601,68 @@
     "apiRoutes": {},
     "url": "zh.wikinews.org",
     "lang": "zh-CN"
+  },
+  "wikipedia": {
+    "routes": {
+      "/current-events/:includeToday?": {
+        "path": "/current-events/:includeToday?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/wikipedia/current-events",
+        "parameters": {
+          "includeToday": {
+            "description": "Include current day events (may be incomplete early in the day)",
+            "default": "auto",
+            "options": [
+              {
+                "label": "Auto (include after 18:00 UTC)",
+                "value": "auto"
+              },
+              {
+                "label": "Always include current day",
+                "value": "always"
+              },
+              {
+                "label": "Never include current day",
+                "value": "never"
+              },
+              {
+                "label": "Include after specific UTC hour (0-23)",
+                "value": "0-23"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "en.wikipedia.org/wiki/Portal:Current_events"
+            ],
+            "target": "/wikipedia/current-events"
+          }
+        ],
+        "name": "Current Events",
+        "maintainers": [
+          "aavanian"
+        ],
+        "description": "Wikipedia Portal: Current events - Latest news and events from the past 7 days",
+        "location": "current-events.ts",
+        "module": "() => import('@/routes/wikipedia/current-events.ts')"
+      }
+    },
+    "name": "Wikipedia",
+    "apiRoutes": {},
+    "url": "en.wikipedia.org",
+    "lang": "en"
   },
   "windsurf": {
     "routes": {
