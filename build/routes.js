@@ -101070,7 +101070,8 @@ export default {
         ],
         "name": "首页",
         "maintainers": [
-          "HenryQW"
+          "HenryQW",
+          "cscnk52"
         ],
         "url": "sspai.com/index",
         "location": "index.ts",
