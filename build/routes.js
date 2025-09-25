@@ -76573,6 +76573,34 @@ export default {
     "url": "www.nationalgeographic.com",
     "lang": "en"
   },
+  "naturalism": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "categories": [
+          "other"
+        ],
+        "example": "/naturalism",
+        "radar": [
+          {
+            "source": [
+              "naturalism.org"
+            ]
+          }
+        ],
+        "name": "What's New",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "naturalism.org",
+        "location": "new.ts",
+        "module": () => import('@/routes/naturalism/new.ts')
+      }
+    },
+    "name": "Naturalism.org",
+    "url": "naturalism.org",
+    "lang": "en"
+  },
   "nature": {
     "routes": {
       "/cover": {
