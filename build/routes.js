@@ -14581,6 +14581,106 @@ export default {
     "url": "barronschina.com.cn",
     "lang": "zh-CN"
   },
+  "baselang": {
+    "routes": {
+      "/blog/:category?": {
+        "path": "/blog/:category?",
+        "categories": [
+          "blog"
+        ],
+        "example": "/baselang/blog",
+        "parameters": {
+          "category": {
+            "description": "Optional category filter",
+            "options": [
+              {
+                "label": "advanced-grammar",
+                "value": "advanced-grammar"
+              },
+              {
+                "label": "basic-grammar",
+                "value": "basic-grammar"
+              },
+              {
+                "label": "company",
+                "value": "company"
+              },
+              {
+                "label": "confidence",
+                "value": "confidence"
+              },
+              {
+                "label": "french",
+                "value": "french"
+              },
+              {
+                "label": "humor",
+                "value": "humor"
+              },
+              {
+                "label": "medellin",
+                "value": "medellin"
+              },
+              {
+                "label": "motivation",
+                "value": "motivation"
+              },
+              {
+                "label": "pronunciation",
+                "value": "pronunciation"
+              },
+              {
+                "label": "study-tips",
+                "value": "study-tips"
+              },
+              {
+                "label": "success-stories",
+                "value": "success-stories"
+              },
+              {
+                "label": "travel",
+                "value": "travel"
+              },
+              {
+                "label": "uncategorized",
+                "value": "uncategorized"
+              },
+              {
+                "label": "vocabulary",
+                "value": "vocabulary"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "baselang.com/blog",
+              "baselang.com/blog/:category"
+            ],
+            "target": "/blog/:category"
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "johan456789"
+        ],
+        "location": "index.ts",
+        "module": () => import('@/routes/baselang/index.ts')
+      }
+    },
+    "name": "BaseLang",
+    "apiRoutes": {},
+    "lang": "en"
+  },
   "bast": {
     "routes": {
       "*": {
