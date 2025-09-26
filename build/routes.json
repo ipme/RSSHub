@@ -29363,6 +29363,42 @@
   },
   "cursor": {
     "routes": {
+      "/blog/:topic?": {
+        "path": "/blog/:topic?",
+        "name": "Blog",
+        "url": "cursor.com",
+        "maintainers": [
+          "johan456789"
+        ],
+        "example": "/cursor/blog",
+        "parameters": {
+          "topic": "Optional topic: product | research | company | news"
+        },
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cursor.com/blog",
+              "cursor.com/blog/topic/:topic"
+            ],
+            "target": "/blog/:topic"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": "() => import('@/routes/cursor/blog.ts')"
+      },
       "/changelog": {
         "path": "/changelog",
         "name": "Changelog",
@@ -125935,6 +125971,31 @@
         "description": "| 新闻动态 | 活动通知 | 学院通知 | 告示通知 |\n| -------- | -------- | -------- | -------- |\n| 1        | 2        | 3        | 4        |",
         "location": "career/index.ts",
         "module": "() => import('@/routes/zju/career/index.ts')"
+      },
+      "/cse/:category?": {
+        "path": "/cse/:category?",
+        "categories": [
+          "university"
+        ],
+        "example": "/zju/cse/bksjy",
+        "parameters": {
+          "category": "类别：`bksjy`，默认为简讯专栏，详情在描述中"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "控制学院通知",
+        "maintainers": [
+          "Rabbits-sys"
+        ],
+        "description": "栏目类型\n\n| 简讯专栏 | 本科生教育 | 研究生教育 | 科研学术 | 人事工作 | 学生思政 | 对外交流 | 就业指导 |\n| ------ | ------- | ------- | ------ | ------ | ------ | ------ | ------ |\n|   -    |  bksjy  |  yjsjy  |  kyxs  |  rsgz  |  xssz  |  dwjl  |  jyzd  |",
+        "location": "cse/index.ts",
+        "module": "() => import('@/routes/zju/cse/index.ts')"
       },
       "/cst/custom/:id": {
         "path": "/cst/custom/:id",
