@@ -36536,6 +36536,50 @@
     "url": "e.ecust.edu.cn",
     "lang": "zh-CN"
   },
+  "eeo": {
+    "routes": {
+      "/kuaixun": {
+        "path": "/kuaixun",
+        "name": "快讯",
+        "url": "www.eeo.com.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/eeo/kuaixun",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.eeo.com.cn/kuaixun/"
+            ],
+            "target": "/kuaixun"
+          }
+        ],
+        "view": 0,
+        "location": "kuaixun.ts",
+        "module": "() => import('@/routes/eeo/kuaixun.ts')"
+      }
+    },
+    "name": "经济观察网",
+    "apiRoutes": {},
+    "url": "eeo.com.cn",
+    "categories": [
+      "finance"
+    ],
+    "description": "",
+    "lang": "zh-CN"
+  },
   "egsea": {
     "routes": {
       "/flash": {
