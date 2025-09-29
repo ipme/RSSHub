@@ -1153,7 +1153,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -1186,7 +1187,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -1260,7 +1262,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5107,6 +5110,9 @@
         "name": "Unknown",
         "maintainers": [],
         "url": "8kcosplay.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "cat.ts",
         "module": "() => import('@/routes/8kcos/cat.ts')"
       },
@@ -5123,7 +5129,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5156,7 +5163,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5212,7 +5220,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5289,7 +5298,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5356,7 +5366,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -5766,6 +5777,9 @@
           "zhenhappy"
         ],
         "url": "ahhhhfs.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/abskoop/index.ts')"
       },
@@ -5784,6 +5798,9 @@
           "zhenhappy"
         ],
         "url": "ahhhhfs.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "nsfw.ts",
         "module": "() => import('@/routes/abskoop/nsfw.ts')"
       }
@@ -11983,6 +12000,9 @@
         "name": "Unknown",
         "maintainers": [],
         "url": "asiantolick.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/asiantolick/index.ts')"
       }
@@ -12006,7 +12026,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "parameters": {
           "order": "排序字段，默认按照资源的收录日期来排序，详见下表",
@@ -18557,7 +18578,8 @@
           "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -23130,7 +23152,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Category",
         "maintainers": [
@@ -23236,7 +23259,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Navigation",
         "maintainers": [
@@ -23261,7 +23285,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "動画カテゴリー",
         "maintainers": [
@@ -23294,7 +23319,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "AVメーカー",
         "maintainers": [
@@ -23327,7 +23353,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Search",
         "maintainers": [
@@ -24973,6 +25000,9 @@
         "maintainers": [
           "flameleaf"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "characters.ts",
         "module": "() => import('@/routes/chub/characters.ts')"
       }
@@ -25310,7 +25340,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -25340,7 +25371,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -25378,6 +25410,9 @@
         "maintainers": [
           "TonyRL"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "user.ts",
         "module": "() => import('@/routes/civitai/user.ts')"
       }
@@ -27747,7 +27782,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "漫画更新",
         "maintainers": [
@@ -27780,7 +27816,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -27811,7 +27848,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -27844,7 +27882,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -27877,7 +27916,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -33257,7 +33297,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Discounted Works",
         "maintainers": [
@@ -33318,7 +33359,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Current Release",
         "maintainers": [
@@ -33344,7 +33386,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -33365,6 +33408,9 @@
         "path": "*",
         "name": "Unknown",
         "maintainers": [],
+        "features": {
+          "nsfw": true
+        },
         "location": "z-index/index.ts",
         "module": "() => import('@/routes/dlsite/z-index/index.ts')"
       }
@@ -36637,7 +36683,8 @@
           "antiCrawler": true,
           "supportBT": true,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Favorites",
         "maintainers": [
@@ -36664,7 +36711,8 @@
           "antiCrawler": true,
           "supportBT": true,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Search",
         "maintainers": [
@@ -37469,7 +37517,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -37500,7 +37549,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -37533,7 +37583,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Search",
         "maintainers": [
@@ -37558,7 +37609,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -38000,7 +38052,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -38254,7 +38307,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Search",
         "maintainers": [
@@ -38280,7 +38334,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40605,7 +40660,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40651,7 +40707,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40685,7 +40742,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40720,7 +40778,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40754,7 +40813,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40788,7 +40848,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40824,7 +40885,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40859,7 +40921,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40891,7 +40954,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40925,7 +40989,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40959,7 +41024,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -40993,7 +41059,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -41027,7 +41094,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -42844,7 +42912,8 @@
           "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -51773,7 +51842,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -51808,7 +51878,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "location": "search.ts",
         "module": "() => import('@/routes/hanime1/search.ts')"
@@ -60251,6 +60322,9 @@
         "maintainers": [
           "Fatpandac"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/iwara/index.ts')"
       },
@@ -60276,7 +60350,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -60738,7 +60813,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -60778,6 +60854,9 @@
         ],
         "url": "javdb.com/",
         "description": "分类\n\n| 有碼     | 無碼       | 歐美    |\n| -------- | ---------- | ------- |\n| censored | uncensored | western |\n\n  排序\n\n| 发布日期排序 | 磁鏈更新排序 |\n| ------------ | ------------ |\n| 1            | 2            |\n\n  过滤\n\n| 全部 | 可下载 | 含字幕 | 含短評 |\n| ---- | ------ | ------ | ------ |\n| 0    | 1      | 2      | 3      |",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/javdb/index.ts')"
       },
@@ -60796,6 +60875,9 @@
           "dddepg"
         ],
         "url": "javdb.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "lists.ts",
         "module": "() => import('@/routes/javdb/lists.ts')"
       },
@@ -60821,7 +60903,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -60863,7 +60946,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -60905,7 +60989,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -60946,7 +61031,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -61030,7 +61116,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -61066,6 +61153,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Last Month | All Time |\n| ---------- | -------- |\n| 1          | 2        |",
+        "features": {
+          "nsfw": true
+        },
         "location": "bestrated.ts",
         "module": "() => import('@/routes/javlibrary/bestrated.ts')"
       },
@@ -61077,6 +61167,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Last Month | All Time |\n| ---------- | -------- |\n| 1          | 2        |",
+        "features": {
+          "nsfw": true
+        },
         "location": "bestrated.ts",
         "module": "() => import('@/routes/javlibrary/bestrated.ts')"
       },
@@ -61096,7 +61189,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Best Reviews",
         "maintainers": [
@@ -61114,6 +61208,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| videos with comments (by date) | everything (by date) |\n| ------------------------------ | -------------------- |\n| 1                              | 2                    |\n\n::: tip\n  See [Categories](https://www.javlibrary.com/en/genres.php) to view all categories.\n:::",
+        "features": {
+          "nsfw": true
+        },
         "location": "genre.ts",
         "module": "() => import('@/routes/javlibrary/genre.ts')"
       },
@@ -61125,6 +61222,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| videos with comments (by date) | everything (by date) |\n| ------------------------------ | -------------------- |\n| 1                              | 2                    |\n\n::: tip\n  See [Categories](https://www.javlibrary.com/en/genres.php) to view all categories.\n:::",
+        "features": {
+          "nsfw": true
+        },
         "location": "genre.ts",
         "module": "() => import('@/routes/javlibrary/genre.ts')"
       },
@@ -61145,7 +61245,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Videos by makers",
         "maintainers": [],
@@ -61161,6 +61262,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Last Month | All Time |\n| ---------- | -------- |\n| 1          | 2        |",
+        "features": {
+          "nsfw": true
+        },
         "location": "mostwanted.ts",
         "module": "() => import('@/routes/javlibrary/mostwanted.ts')"
       },
@@ -61172,6 +61276,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Last Month | All Time |\n| ---------- | -------- |\n| 1          | 2        |",
+        "features": {
+          "nsfw": true
+        },
         "location": "mostwanted.ts",
         "module": "() => import('@/routes/javlibrary/mostwanted.ts')"
       },
@@ -61182,6 +61289,9 @@
         ],
         "name": "Unknown",
         "maintainers": [],
+        "features": {
+          "nsfw": true
+        },
         "location": "newentries.ts",
         "module": "() => import('@/routes/javlibrary/newentries.ts')"
       },
@@ -61192,6 +61302,9 @@
         ],
         "name": "Unknown",
         "maintainers": [],
+        "features": {
+          "nsfw": true
+        },
         "location": "newentries.ts",
         "module": "() => import('@/routes/javlibrary/newentries.ts')"
       },
@@ -61203,6 +61316,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| videos with comments (by date) | everything (by date) |\n| ------------------------------ | -------------------- |\n| 1                              | 2                    |",
+        "features": {
+          "nsfw": true
+        },
         "location": "newrelease.ts",
         "module": "() => import('@/routes/javlibrary/newrelease.ts')"
       },
@@ -61214,6 +61330,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| videos with comments (by date) | everything (by date) |\n| ------------------------------ | -------------------- |\n| 1                              | 2                    |",
+        "features": {
+          "nsfw": true
+        },
         "location": "newrelease.ts",
         "module": "() => import('@/routes/javlibrary/newrelease.ts')"
       },
@@ -61252,6 +61371,9 @@
         ],
         "name": "Unknown",
         "maintainers": [],
+        "features": {
+          "nsfw": true
+        },
         "location": "update.ts",
         "module": "() => import('@/routes/javlibrary/update.ts')"
       },
@@ -61262,6 +61384,9 @@
         ],
         "name": "Unknown",
         "maintainers": [],
+        "features": {
+          "nsfw": true
+        },
         "location": "update.ts",
         "module": "() => import('@/routes/javlibrary/update.ts')"
       },
@@ -61273,6 +61398,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Wanted     | Watched     | Owned     |\n| ---------- | ----------- | --------- |\n| userwanted | userwatched | userowned |",
+        "features": {
+          "nsfw": true
+        },
         "location": "user.ts",
         "module": "() => import('@/routes/javlibrary/user.ts')"
       },
@@ -61284,6 +61412,9 @@
         "name": "Unknown",
         "maintainers": [],
         "description": "| Wanted     | Watched     | Owned     |\n| ---------- | ----------- | --------- |\n| userwanted | userwatched | userowned |",
+        "features": {
+          "nsfw": true
+        },
         "location": "user.ts",
         "module": "() => import('@/routes/javlibrary/user.ts')"
       }
@@ -61408,6 +61539,9 @@
           "TonyRL"
         ],
         "url": "javtrailers.com/categories",
+        "features": {
+          "nsfw": true
+        },
         "location": "categories.ts",
         "module": "() => import('@/routes/javtrailers/categories.ts')"
       },
@@ -61431,6 +61565,9 @@
         "maintainers": [
           "TonyRL"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "studios.ts",
         "module": "() => import('@/routes/javtrailers/studios.ts')"
       }
@@ -63599,6 +63736,9 @@
         "maintainers": [
           "Urabartin"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "search.ts",
         "module": "() => import('@/routes/jpxgmn/search.ts')"
       },
@@ -63649,6 +63789,9 @@
         "maintainers": [
           "Urabartin"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "weekly.ts",
         "module": "() => import('@/routes/jpxgmn/weekly.ts')"
       }
@@ -65278,7 +65421,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -65318,7 +65462,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -65691,7 +65836,8 @@
           "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -66289,7 +66435,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -68007,6 +68154,9 @@
         "maintainers": [
           "nczitzk"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "category.ts",
         "module": "() => import('@/routes/literotica/category.ts')"
       },
@@ -69811,6 +69961,9 @@
           "chrisis58"
         ],
         "example": "/mangadex/manga/f98660a1-d2e2-461c-960d-7bd13df8b76d/en",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/mangadex/index.ts')"
       },
@@ -69868,7 +70021,8 @@
               "description": "MangaDex Refresh Token, required when username and password are not set and the list is private",
               "optional": true
             }
-          ]
+          ],
+          "nsfw": true
         },
         "location": "mdlist/feed.ts",
         "module": "() => import('@/routes/mangadex/mdlist/feed.ts')"
@@ -69924,7 +70078,8 @@
               "description": "MangaDex Refresh Token, required when username and password are not set",
               "optional": true
             }
-          ]
+          ],
+          "nsfw": true
         },
         "location": "user/feed.ts",
         "module": "() => import('@/routes/mangadex/user/feed.ts')"
@@ -70007,7 +70162,8 @@
               "description": "MangaDex Refresh Token, required when username and password are not set",
               "optional": true
             }
-          ]
+          ],
+          "nsfw": true
         },
         "location": "user/follows.ts",
         "module": "() => import('@/routes/mangadex/user/follows.ts')"
@@ -70043,7 +70199,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -70079,7 +70236,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -70114,7 +70272,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -70199,6 +70358,9 @@
         "maintainers": [
           "TonyRL"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "video.ts",
         "module": "() => import('@/routes/manyvids/video.ts')"
       }
@@ -77876,6 +78038,9 @@
           "TonyRL"
         ],
         "url": "netflav.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/netflav/index.ts')"
       }
@@ -78790,7 +78955,8 @@
         },
         "features": {
           "antiCrawler": true,
-          "supportBT": true
+          "supportBT": true,
+          "nsfw": true
         },
         "radar": [
           {
@@ -82966,6 +83132,9 @@
         "maintainers": [
           "fang63625"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "vod.ts",
         "module": "() => import('@/routes/olevod/vod.ts')"
       },
@@ -82987,6 +83156,9 @@
         "maintainers": [
           "fang63625"
         ],
+        "features": {
+          "nsfw": true
+        },
         "location": "vodlist.ts",
         "module": "() => import('@/routes/olevod/vodlist.ts')"
       }
@@ -83447,7 +83619,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Author Search",
         "maintainers": [
@@ -83480,7 +83653,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Author Search",
         "maintainers": [
@@ -83513,7 +83687,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Author Search",
         "maintainers": [
@@ -83546,7 +83721,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Author Search",
         "maintainers": [
@@ -83579,7 +83755,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Author Search",
         "maintainers": [
@@ -86121,7 +86298,8 @@
               "optional": true,
               "description": "The value of the session_id cookie after logging in to Patreon, required to access paid posts"
             }
-          ]
+          ],
+          "nsfw": true
         },
         "radar": [
           {
@@ -87138,7 +87316,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -87173,7 +87352,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -87212,7 +87392,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Novel Series",
         "maintainers": [
@@ -87266,7 +87447,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -87378,7 +87560,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Rankings",
         "maintainers": [
@@ -87450,7 +87633,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Keyword",
         "maintainers": [
@@ -87476,7 +87660,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -88366,7 +88551,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Video List",
         "maintainers": [
@@ -88394,7 +88580,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Category",
         "maintainers": [
@@ -88613,7 +88800,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -88726,7 +88914,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Keyword Search",
         "maintainers": [
@@ -88751,7 +88940,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -91969,7 +92159,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -96323,7 +96514,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "作者文章",
         "maintainers": [
@@ -97958,6 +98150,9 @@
           "nczitzk"
         ],
         "url": "shuiguopai.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/shuiguopai/index.ts')"
       }
@@ -98425,7 +98620,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "作者",
         "maintainers": [
@@ -98666,7 +98862,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Following Creators",
         "maintainers": [
@@ -98706,7 +98903,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Following Works",
         "maintainers": [
@@ -98746,7 +98944,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Friend Works",
         "maintainers": [
@@ -98780,7 +98979,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Skeb",
         "maintainers": [
@@ -98876,7 +99076,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Search Results",
         "maintainers": [
@@ -98907,7 +99108,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Creator Works",
         "maintainers": [
@@ -98949,7 +99151,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Illust",
         "maintainers": [
@@ -99004,7 +99207,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Hot",
         "maintainers": [
@@ -99059,7 +99263,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "Manga",
         "maintainers": [
@@ -107573,7 +107778,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "帖子跟踪",
         "maintainers": [
@@ -114495,7 +114701,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -114529,6 +114736,9 @@
           "Halcao"
         ],
         "url": "uraaka-joshi.com/",
+        "features": {
+          "nsfw": true
+        },
         "location": "uraaka-joshi.ts",
         "module": "() => import('@/routes/uraaka-joshi/uraaka-joshi.ts')"
       }
@@ -119432,6 +119642,9 @@
           }
         ],
         "url": "wnacg.com/albums.html",
+        "features": {
+          "nsfw": true
+        },
         "location": "category.ts",
         "module": "() => import('@/routes/wnacg/category.ts')"
       },
@@ -119451,6 +119664,9 @@
           }
         ],
         "url": "wnacg.com/albums.html",
+        "features": {
+          "nsfw": true
+        },
         "location": "index.ts",
         "module": "() => import('@/routes/wnacg/index.ts')"
       },
@@ -119469,6 +119685,9 @@
           }
         ],
         "url": "wnacg.com/albums.html",
+        "features": {
+          "nsfw": true
+        },
         "location": "tag.ts",
         "module": "() => import('@/routes/wnacg/tag.ts')"
       }
@@ -121485,7 +121704,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "论坛",
         "maintainers": [
@@ -121532,7 +121752,8 @@
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "排行榜",
         "maintainers": [
@@ -124191,7 +124412,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -124221,7 +124443,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -126394,7 +126617,8 @@
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "name": "forum",
         "maintainers": [
