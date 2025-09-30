@@ -9957,7 +9957,8 @@ export default {
         ],
         "name": "News",
         "maintainers": [
-          "etShaw-zh"
+          "etShaw-zh",
+          "goestav"
         ],
         "url": "www.anthropic.com/news",
         "location": "news.ts",
