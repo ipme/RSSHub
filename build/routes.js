@@ -3569,7 +3569,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -3600,7 +3601,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -3668,7 +3670,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -3699,7 +3702,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -3732,7 +3736,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -3765,7 +3770,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -74580,7 +74586,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -74612,7 +74619,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
@@ -74644,7 +74652,8 @@ export default {
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
-          "supportScihub": false
+          "supportScihub": false,
+          "nsfw": true
         },
         "radar": [
           {
