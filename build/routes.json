@@ -113859,7 +113859,7 @@
         "radar": [
           {
             "source": [
-              "global.udn.com/global_vision/index/:category",
+              "global.udn.com/global_vision/index",
               "global.udn.com/"
             ]
           }
@@ -113868,7 +113868,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "description": "| 首頁 | 最新文章 | 熱門文章 |\n| ---- | -------- | -------- |\n|      | new      | hot      |",
+        "description": "| 首頁 | 編輯精選 | 熱門文章 |\n| ---- | -------- | -------- |\n|      | editor   | hot      |",
         "location": "global/index.ts",
         "module": "() => import('@/routes/udn/global/index.ts')"
       },
@@ -124972,7 +124972,13 @@
           "id": "作者 id，可在用户主页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": "",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -125040,7 +125046,13 @@
           "id": "作者 id，可在用户主页 URL 中找到"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": "",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -125209,7 +125221,13 @@
           "id": "用户类型usertype，参考用户主页的URL。目前有两种，见下表"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": "",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
@@ -125244,7 +125262,13 @@
           "sortBy": "排序方式：`default`, `created`, `updated`。默认为 `default`"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "ZHIHU_COOKIES",
+              "description": "",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
