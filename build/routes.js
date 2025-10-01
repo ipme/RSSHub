@@ -122318,6 +122318,73 @@ export default {
     "url": "xys.org",
     "lang": "zh-CN"
   },
+  "xyu": {
+    "routes": {
+      "/library": {
+        "path": "/library",
+        "categories": [
+          "university"
+        ],
+        "example": "/xyu/library",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "图书馆通知公告",
+        "maintainers": [
+          "JinMokai"
+        ],
+        "url": "lib.xyc.edu.cn/index/tzgg.htm",
+        "radar": [
+          {
+            "source": [
+              "lib.xyc.edu.cn/index/tzgg.htm"
+            ],
+            "target": "/library"
+          }
+        ],
+        "location": "library.ts",
+        "module": () => import('@/routes/xyu/library.ts')
+      },
+      "/index/tzgg": {
+        "path": "/index/tzgg",
+        "categories": [
+          "university"
+        ],
+        "example": "/xyu/index/tzgg",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.xyc.edu.cn/index/tzgg.htm"
+            ]
+          }
+        ],
+        "name": "官网通知公告",
+        "maintainers": [
+          "JinMokai"
+        ],
+        "url": "www.xyc.edu.cn/index/tzgg.htm",
+        "location": "notices.ts",
+        "module": () => import('@/routes/xyu/notices.ts')
+      }
+    },
+    "name": "新余学院",
+    "apiRoutes": {},
+    "url": "xyc.edu.cn",
+    "lang": "zh-CN"
+  },
   "xyzrank": {
     "routes": {
       "/:category?": {
