@@ -865,6 +865,56 @@ export default {
     "description": "",
     "lang": "en"
   },
+  "0xxx": {
+    "routes": {
+      "/:filter?": {
+        "path": "/:filter?",
+        "name": "Source",
+        "url": "0xxx.ws",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/0xxx/category=Movie-HD-1080p",
+        "parameters": {
+          "filter": {
+            "description": "Filter"
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Movie HD 1080p](https://0xxx.ws?category=Movie-HD-1080p), where the source URL is `https://0xxx.ws?category=Movie-HD-1080p`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/0xxx/category=Movie-HD-1080p`](https://rsshub.app/0xxx/category=Movie-HD-1080p).\n:::\n",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "nfsw": true
+        },
+        "radar": [
+          {
+            "source": [
+              "0xxx.ws"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": () => import('@/routes/0xxx/index.ts')
+      }
+    },
+    "name": "0xxx.ws",
+    "apiRoutes": {},
+    "url": "0xxx.ws",
+    "categories": [
+      "multimedia"
+    ],
+    "description": "Best 0day Porn Source",
+    "lang": "en"
+  },
   "10000link": {
     "routes": {
       "/info/:category?/:id?": {
