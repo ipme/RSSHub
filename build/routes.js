@@ -52987,6 +52987,107 @@ export default {
         "description": "| 校区要闻 | 媒体报道 | 综合新闻 | 校园动态 | 讲座论坛 | 热点专题 | 招标信息 | 重要关注 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| id-116   | id-80    | id-75    | id-77    | id-78    | id-79    | id-81    | id-124   |",
         "location": "article.ts",
         "module": () => import('@/routes/hitsz/article.ts')
+      },
+      "/due/tzgg": {
+        "path": "/due/tzgg",
+        "name": "教务部",
+        "url": "due.hitsz.edu.cn",
+        "maintainers": [
+          "guohuiyuan"
+        ],
+        "example": "/hitsz/due/tzgg",
+        "parameters": {},
+        "description": ":::tip\n订阅 [通知公告](http://due.hitsz.edu.cn/index/tzggqb.htm)，其源网址为 `http://due.hitsz.edu.cn/index/tzggqb.htm`，请参考该 URL 指定部分构成参数，此时路由为 [`/hitsz/due/tzgg`](https://rsshub.app/hitsz/due/tzgg)。\n:::\n如需获取教务学务和学位管理所有栏目的新闻汇总，请使用 [`/hitsz/due/general`](https://rsshub.app/hitsz/due/general) 路由。\n\n<details>\n<summary>更多栏目</summary>\n\n| 栏目 | ID |\n| - | - |\n| [通知公告](http://due.hitsz.edu.cn/index/tzggqb.htm) | [tzgg](https://rsshub.app/hitsz/due/tzgg) |\n\n</details>\n",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "due.hitsz.edu.cn",
+              "due.hitsz.edu.cn/index/:id/list.htm"
+            ],
+            "target": "/hitsz/due/:id"
+          },
+          {
+            "title": "通知公告",
+            "source": [
+              "due.hitsz.edu.cn/index/tzggqb.htm"
+            ],
+            "target": "/hitsz/due/tzgg"
+          }
+        ],
+        "location": "due-tzgg.ts",
+        "module": () => import('@/routes/hitsz/due-tzgg.ts')
+      },
+      "/due/general/:type?": {
+        "path": "/due/general/:type?",
+        "name": "教务部教务学务与学位管理所有栏目",
+        "url": "due.hitsz.edu.cn",
+        "maintainers": [
+          "guohuiyuan"
+        ],
+        "example": "/hitsz/due/general",
+        "parameters": {
+          "type": {
+            "description": "栏目类型筛选，默认all（所有栏目）",
+            "options": [
+              {
+                "value": "all",
+                "label": "所有栏目"
+              },
+              {
+                "value": "teaching",
+                "label": "教务核心业务"
+              },
+              {
+                "value": "studentStatus",
+                "label": "学籍相关"
+              },
+              {
+                "value": "teachingSupport",
+                "label": "教学支持"
+              },
+              {
+                "value": "education",
+                "label": "学生培养"
+              }
+            ],
+            "default": "all"
+          }
+        },
+        "description": "哈尔滨工业大学（深圳）教务部中教务学务和学位管理所有栏目的最新新闻汇总。\n\n#### 栏目分组说明\n支持按业务类型筛选，使用路径参数指定分组：\n- `type=teaching` - 教务核心业务：教务管理、考务管理、注册管理、选课管理、成绩管理\n- `type=studentStatus` - 学籍相关：本科生学籍管理、研究生学籍管理\n- `type=teachingSupport` - 教学支持：教学信息化、奖助学金\n- `type=education` - 学生培养：本科生新闻、硕士学位培养、博士学位培养\n- `type=all` 或省略 - 所有栏目（默认）\n\n#### 包含栏目：\n- [教务管理](http://due.hitsz.edu.cn/jwxw/jwgl.htm)\n- [考务管理](http://due.hitsz.edu.cn/jwxw/kwgl.htm)\n- [注册管理](http://due.hitsz.edu.cn/jwxw/zcgl.htm)\n- [选课管理](http://due.hitsz.edu.cn/jwxw/xkgl.htm)\n- [成绩管理](http://due.hitsz.edu.cn/jwxw/cjgl.htm)\n- [学籍管理（本）](http://due.hitsz.edu.cn/jwxw/xjgl_b_.htm)\n- [学籍管理（研）](http://due.hitsz.edu.cn/jwxw/xjgl_y_.htm)\n- [教学信息化](http://due.hitsz.edu.cn/jwxw/jxxxh.htm)\n- [奖助学金](http://due.hitsz.edu.cn/jwxw/jzxj.htm)\n- [本科生新闻](http://due.hitsz.edu.cn/xwgl/bksxw.htm)\n- [硕士学位培养](http://due.hitsz.edu.cn/xwgl/ssxwpy/ktyzj.htm)\n- [博士学位培养](http://due.hitsz.edu.cn/xwgl/bsxwpy/qqhj1.htm)",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "due.hitsz.edu.cn/jwxw/jwgl.htm"
+            ],
+            "target": "/hitsz/due/general"
+          }
+        ],
+        "location": "due.ts",
+        "module": () => import('@/routes/hitsz/due.ts')
       }
     },
     "name": "哈尔滨工业大学（深圳）",
