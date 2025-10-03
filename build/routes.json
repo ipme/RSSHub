@@ -73627,6 +73627,31 @@
         "url": "jp.mercari.com",
         "location": "keyword.ts",
         "module": "() => import('@/routes/mercari/keyword.ts')"
+      },
+      "/search/:query": {
+        "path": "/search/:query",
+        "categories": [
+          "shopping"
+        ],
+        "example": "/mercari/search/keyword=シャツ&7bd3eacc-ae45-4d73-bc57-a611c9432014=340258ac-e220-4722-8c35-7f73b7382831",
+        "parameters": {
+          "query": "Search parameters in URL query string format."
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Search",
+        "maintainers": [
+          "yana9i, Tsuyumi25"
+        ],
+        "url": "jp.mercari.com",
+        "location": "search.ts",
+        "module": "() => import('@/routes/mercari/search.ts')"
       }
     },
     "name": "Mercari",
