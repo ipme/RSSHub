@@ -9375,6 +9375,44 @@
     "url": "www.alternativeto.net",
     "lang": "en"
   },
+  "altotrain": {
+    "routes": {
+      "/:language?": {
+        "path": "/:language?",
+        "categories": [
+          "travel"
+        ],
+        "example": "/altotrain/en",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "altotrain.ca/:language",
+              "altotrain.ca/:language/news",
+              "altotrain.ca/:language/nouvelles"
+            ],
+            "target": "/:language"
+          }
+        ],
+        "name": "Alto News",
+        "maintainers": [
+          "elibroftw"
+        ],
+        "location": "news.ts",
+        "module": "() => import('@/routes/altotrain/news.ts')"
+      }
+    },
+    "name": "Alto - Toronto-Québec City High-Speed Rail Network",
+    "url": "altotrain.ca",
+    "lang": "en"
+  },
   "amazfitwatchfaces": {
     "routes": {
       "/:device/:sort/:searchParams?": {
@@ -42099,6 +42137,48 @@
     ],
     "description": "",
     "lang": "zh-CN"
+  },
+  "gc.ca": {
+    "routes": {
+      "/pm/:language?": {
+        "path": "/pm/:language?",
+        "categories": [
+          "government"
+        ],
+        "example": "/gc.ca/pm/en",
+        "parameters": {
+          "language": "Language (en or fr)"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "pm.gc.ca",
+              "pm.gc.ca/:language",
+              "pm.gc.ca/:language/news",
+              "pm.gc.ca/:language/nouvelles"
+            ],
+            "target": "/pm/:language"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "elibroftw"
+        ],
+        "location": "pm-news.ts",
+        "module": "() => import('@/routes/gc.ca/pm-news.ts')"
+      }
+    },
+    "name": "Prime Minister of Canada",
+    "url": "pm.gc.ca",
+    "lang": "en"
   },
   "gcores": {
     "routes": {
