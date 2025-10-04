@@ -58585,6 +58585,55 @@
     },
     "lang": "zh-CN"
   },
+  "indianexpress": {
+    "routes": {
+      "/section/:id{.+}?": {
+        "path": "/section/:id{.+}?",
+        "name": "Section",
+        "url": "indianexpress.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/indianexpress/section/explained",
+        "parameters": {
+          "id": {
+            "description": "Section ID, `trending` as Trending by default"
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Section](https://indianexpress.com/), where the source URL is `https://indianexpress.com/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/indianexpress/section/explained`](https://rsshub.app/indianexpress/section/explained).\n:::\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "indianexpress.com/section/:id"
+            ],
+            "target": "/section/:id"
+          }
+        ],
+        "view": 0,
+        "location": "section.ts",
+        "module": "() => import('@/routes/indianexpress/section.ts')"
+      }
+    },
+    "name": "The Indian Express",
+    "url": "indianexpress.com",
+    "categories": [
+      "new-media"
+    ],
+    "description": "Get latest and Breaking News on Politics, Business, Lifestyle, Entertainment and Sports along with News updates from around the world. Also, find English News, live coverage on Bollywood, Cricket, Technology, Celebrities and more on indianexpress.com",
+    "lang": "en"
+  },
   "indiansinkuwait": {
     "routes": {
       "/latest": {
