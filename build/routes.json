@@ -69113,54 +69113,9 @@
           "zhaoweizhong"
         ],
         "url": "www.lovelive-anime.jp/",
-        "description": "| Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |\n| `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |\n\n| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |\n| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |",
+        "description": "| Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | イキヅライブ！ | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ |  ------------ | ---------------------------------------- |\n| `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora |  ikizulive  | yohane       | musical                                  |\n\n| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |\n| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |",
         "location": "news.ts",
         "module": "() => import('@/routes/lovelive-anime/news.ts')"
-      },
-      "/schedules/:serie?/:category?": {
-        "path": "/schedules/:serie?/:category?",
-        "parameters": {
-          "serie": "Love Live! Series sub-projects abbreviation, see the following table",
-          "category": "The official website lists the categories, see the following table for details"
-        },
-        "name": "Schedule",
-        "example": "/lovelive-anime/schedules",
-        "categories": [
-          "anime"
-        ],
-        "maintainers": [
-          "axojhf"
-        ],
-        "description": "| Sub-project Name (not full name) | 全シリーズ              | Lovelive!  | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | ----------------------- | ---------- | -------------------- | ------------------------------------------ | --------------------- | ---------------------------------------- |\n| `serie` parameter                | *No parameter* or `all` | `lovelive` | `sunshine`           | `nijigasaki`                               | `superstar`           | `musical`                                |\n\n| Category Name        | 全て                    | ライブ | イベント | 生配信    |\n| -------------------- | ----------------------- | ------ | -------- | --------- |\n| `category` parameter | *No parameter* or `all` | `live` | `event`  | `haishin` |",
-        "location": "schedules.ts",
-        "module": "() => import('@/routes/lovelive-anime/schedules.ts')"
-      },
-      "/topics/:abbr/:category?/:option?": {
-        "path": "/topics/:abbr/:category?/:option?",
-        "categories": [
-          "anime"
-        ],
-        "example": "/lovelive-anime/topics/otonokizaka",
-        "parameters": {
-          "abbr": "The path to the Love Live series of sub-projects on the official website is detailed in the table below",
-          "category": "The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details",
-          "option": "Crawl full text when `option` is `detail`."
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "Categories Topics",
-        "maintainers": [
-          "axojhf"
-        ],
-        "description": "| Sub-project Name (not full name) | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ---------------------------------------- |\n| `abbr`parameter                  | otonokizaka | uranohoshi           | nijigasaki                                 | yuigaoka              | yohane       | musical                                  |\n\n| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | その他 | キャンペーン |\n| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | other  | campaign     |",
-        "location": "topics.ts",
-        "module": "() => import('@/routes/lovelive-anime/topics.ts')"
       }
     },
     "name": "Love Live! Official Website",
@@ -87733,6 +87688,256 @@
     },
     "name": "Pixabay",
     "url": "pixabay.com",
+    "lang": "en"
+  },
+  "pixelstech": {
+    "routes": {
+      "/feed/:topic?": {
+        "path": "/feed/:topic?",
+        "name": "Feed",
+        "url": "www.pixelstech.net",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/pixelstech/feed/ai",
+        "parameters": {
+          "category": {
+            "description": "Topic, all by default",
+            "options": [
+              {
+                "label": "All",
+                "value": ""
+              },
+              {
+                "label": "AI",
+                "value": "ai"
+              },
+              {
+                "label": "Alibaba",
+                "value": "alibaba"
+              },
+              {
+                "label": "Apple",
+                "value": "apple"
+              },
+              {
+                "label": "Database",
+                "value": "database"
+              },
+              {
+                "label": "Go",
+                "value": "go"
+              },
+              {
+                "label": "Huawei",
+                "value": "huawei"
+              },
+              {
+                "label": "Java",
+                "value": "java"
+              },
+              {
+                "label": "JavaScript",
+                "value": "javascript"
+              },
+              {
+                "label": "Linux",
+                "value": "linux"
+              },
+              {
+                "label": "LLM",
+                "value": "llm"
+              },
+              {
+                "label": "Nvidia",
+                "value": "nvidia"
+              },
+              {
+                "label": "Python",
+                "value": "python"
+              },
+              {
+                "label": "Rust",
+                "value": "rust"
+              },
+              {
+                "label": "Tesla",
+                "value": "tesla"
+              },
+              {
+                "label": "Web",
+                "value": "web"
+              },
+              {
+                "label": "Web3",
+                "value": "web3"
+              },
+              {
+                "label": "Zig",
+                "value": "zig"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nTo subscribe to [AI](https://www.pixelstech.net/feed/ai), where the source URL is `https://www.pixelstech.net/feed/ai`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/pixelstech/feed/ai`](https://rsshub.app/pixelstech/feed/ai).\n:::\n\n<details>\n  <summary>More topics</summary>\n\n  | Topic                                                    | ID                                                          |\n  | -------------------------------------------------------- | ----------------------------------------------------------- |\n  | [AI](https://www.pixelstech.net/feed/ai)                 | [ai](https://rsshub.app/pixelstech/feed/ai)                 |\n  | [Alibaba](https://www.pixelstech.net/feed/alibaba)       | [alibaba](https://rsshub.app/pixelstech/feed/alibaba)       |\n  | [Apple](https://www.pixelstech.net/feed/apple)           | [apple](https://rsshub.app/pixelstech/feed/apple)           |\n  | [Database](https://www.pixelstech.net/feed/database)     | [database](https://rsshub.app/pixelstech/feed/database)     |\n  | [Go](https://www.pixelstech.net/feed/go)                 | [go](https://rsshub.app/pixelstech/feed/go)                 |\n  | [Huawei](https://www.pixelstech.net/feed/huawei)         | [huawei](https://rsshub.app/pixelstech/feed/huawei)         |\n  | [Java](https://www.pixelstech.net/feed/java)             | [java](https://rsshub.app/pixelstech/feed/java)             |\n  | [JavaScript](https://www.pixelstech.net/feed/javascript) | [javascript](https://rsshub.app/pixelstech/feed/javascript) |\n  | [Linux](https://www.pixelstech.net/feed/linux)           | [linux](https://rsshub.app/pixelstech/feed/linux)           |\n  | [LLM](https://www.pixelstech.net/feed/llm)               | [llm](https://rsshub.app/pixelstech/feed/llm)               |\n  | [Nvidia](https://www.pixelstech.net/feed/nvidia)         | [nvidia](https://rsshub.app/pixelstech/feed/nvidia)         |\n  | [Python](https://www.pixelstech.net/feed/python)         | [python](https://rsshub.app/pixelstech/feed/python)         |\n  | [Rust](https://www.pixelstech.net/feed/rust)             | [rust](https://rsshub.app/pixelstech/feed/rust)             |\n  | [Tesla](https://www.pixelstech.net/feed/tesla)           | [tesla](https://rsshub.app/pixelstech/feed/tesla)           |\n  | [Web](https://www.pixelstech.net/feed/web)               | [web](https://rsshub.app/pixelstech/feed/web)               |\n  | [Web3](https://www.pixelstech.net/feed/web3)             | [web3](https://rsshub.app/pixelstech/feed/web3)             |\n  | [Zig](https://www.pixelstech.net/feed/zig)               | [zig](https://rsshub.app/pixelstech/feed/zig)               |\n\n</details>\n",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.pixelstech.net/feed/:topic?"
+            ],
+            "target": "/feed/:topic"
+          },
+          {
+            "title": "All",
+            "source": [
+              "www.pixelstech.net/feed/"
+            ],
+            "target": "/feed"
+          },
+          {
+            "title": "AI",
+            "source": [
+              "www.pixelstech.net/feed/ai"
+            ],
+            "target": "/feed/ai"
+          },
+          {
+            "title": "Alibaba",
+            "source": [
+              "www.pixelstech.net/feed/alibaba"
+            ],
+            "target": "/feed/alibaba"
+          },
+          {
+            "title": "Apple",
+            "source": [
+              "www.pixelstech.net/feed/apple"
+            ],
+            "target": "/feed/apple"
+          },
+          {
+            "title": "Database",
+            "source": [
+              "www.pixelstech.net/feed/database"
+            ],
+            "target": "/feed/database"
+          },
+          {
+            "title": "Go",
+            "source": [
+              "www.pixelstech.net/feed/go"
+            ],
+            "target": "/feed/go"
+          },
+          {
+            "title": "Huawei",
+            "source": [
+              "www.pixelstech.net/feed/huawei"
+            ],
+            "target": "/feed/huawei"
+          },
+          {
+            "title": "Java",
+            "source": [
+              "www.pixelstech.net/feed/java"
+            ],
+            "target": "/feed/java"
+          },
+          {
+            "title": "JavaScript",
+            "source": [
+              "www.pixelstech.net/feed/javascript"
+            ],
+            "target": "/feed/javascript"
+          },
+          {
+            "title": "Linux",
+            "source": [
+              "www.pixelstech.net/feed/linux"
+            ],
+            "target": "/feed/linux"
+          },
+          {
+            "title": "LLM",
+            "source": [
+              "www.pixelstech.net/feed/llm"
+            ],
+            "target": "/feed/llm"
+          },
+          {
+            "title": "Nvidia",
+            "source": [
+              "www.pixelstech.net/feed/nvidia"
+            ],
+            "target": "/feed/nvidia"
+          },
+          {
+            "title": "Python",
+            "source": [
+              "www.pixelstech.net/feed/python"
+            ],
+            "target": "/feed/python"
+          },
+          {
+            "title": "Rust",
+            "source": [
+              "www.pixelstech.net/feed/rust"
+            ],
+            "target": "/feed/rust"
+          },
+          {
+            "title": "Tesla",
+            "source": [
+              "www.pixelstech.net/feed/tesla"
+            ],
+            "target": "/feed/tesla"
+          },
+          {
+            "title": "Web",
+            "source": [
+              "www.pixelstech.net/feed/web"
+            ],
+            "target": "/feed/web"
+          },
+          {
+            "title": "Web3",
+            "source": [
+              "www.pixelstech.net/feed/web3"
+            ],
+            "target": "/feed/web3"
+          },
+          {
+            "title": "Zig",
+            "source": [
+              "www.pixelstech.net/feed/zig"
+            ],
+            "target": "/feed/zig"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": "() => import('@/routes/pixelstech/index.ts')"
+      }
+    },
+    "name": "PixelsTech",
+    "apiRoutes": {},
+    "url": "pixelstech.net",
+    "categories": [
+      "new-media"
+    ],
+    "description": "Latest Ai programming news, tutorials and articles. Stay updated with Ai development trends, coding tips, and technical insights for developers.",
     "lang": "en"
   },
   "pixiv": {
