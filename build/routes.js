@@ -93148,6 +93148,38 @@ export default {
     "url": "researchgate.net",
     "lang": "en"
   },
+  "resetera": {
+    "routes": {
+      "/thread/:id": {
+        "path": "/thread/:id",
+        "name": "Thread latest posts (text & images)",
+        "url": "resetera.com",
+        "example": "/resetera/thread/1076160",
+        "parameters": {
+          "id": "Numeric thread ID at the end of the URL"
+        },
+        "maintainers": [
+          "ZEN-GUO"
+        ],
+        "categories": [
+          "bbs"
+        ],
+        "radar": [
+          {
+            "source": [
+              "resetera.com/threads/:slug.:id/"
+            ],
+            "target": "/thread/:id"
+          }
+        ],
+        "location": "thread.ts",
+        "module": () => import('@/routes/resetera/thread.ts')
+      }
+    },
+    "name": "ResetEra",
+    "url": "resetera.com",
+    "lang": "en"
+  },
   "resonac": {
     "routes": {
       "/products": {
