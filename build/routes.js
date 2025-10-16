@@ -75399,6 +75399,41 @@ export default {
       "social-media"
     ]
   },
+  "miyuki": {
+    "routes": {
+      "/news": {
+        "path": "/news",
+        "example": "/miyuki/news",
+        "name": "News",
+        "categories": [
+          "new-media"
+        ],
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "miyuki.jp",
+              "miyuki.jp/s/y10/news/list"
+            ],
+            "target": "/news"
+          }
+        ],
+        "location": "news.ts",
+        "module": () => import('@/routes/miyuki/news.ts')
+      }
+    },
+    "name": "中島みゆき Official",
+    "url": "miyuki.jp",
+    "lang": "ja",
+    "categories": [
+      "new-media"
+    ]
+  },
   "modb": {
     "routes": {
       "/topic/:id": {
