@@ -29245,6 +29245,37 @@
         "url": "www.csust.edu.cn/tggs.htm",
         "location": "tggs.ts",
         "module": "() => import('@/routes/csust/tggs.ts')"
+      },
+      "/xkxs": {
+        "path": "/xkxs",
+        "categories": [
+          "university"
+        ],
+        "example": "/csust/xkxs",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.csust.edu.cn/xkxs.htm",
+              "www.csust.edu.cn/"
+            ]
+          }
+        ],
+        "name": "学科学术",
+        "maintainers": [
+          "powerfullz"
+        ],
+        "url": "www.csust.edu.cn/xkxs.htm",
+        "location": "xkxs.ts",
+        "module": "() => import('@/routes/csust/xkxs.ts')"
       }
     },
     "name": "长沙理工大学",
@@ -104269,18 +104300,21 @@
           "traditional-media"
         ],
         "example": "/stdaily/digitalpaper",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "name": "科技日报",
         "maintainers": [
-          "lyqluis"
+          "lyqluis",
+          "KarasuShin"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "epaper.stdaily.com/statics/technology-site/index.html"
+            ],
+            "target": "/digitalpaper"
+          }
         ],
         "location": "digitalpaper.ts",
         "module": "() => import('@/routes/stdaily/digitalpaper.ts')"
@@ -104288,7 +104322,7 @@
     },
     "name": "中国科技网",
     "apiRoutes": {},
-    "url": "digitalpaper.stdaily.com",
+    "url": "epaper.stdaily.com",
     "lang": "zh-CN"
   },
   "steam": {
