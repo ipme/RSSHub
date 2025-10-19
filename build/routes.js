@@ -27027,6 +27027,44 @@ export default {
     "url": "codeforces.com",
     "lang": "en"
   },
+  "cognition": {
+    "name": "cognition",
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "cognition.ai/blog",
+        "maintainers": [
+          "Loongphy"
+        ],
+        "example": "/cognition/blog",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "cognition.ai/blog/1"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": () => import('@/routes/cognition/blog.ts')
+      }
+    },
+    "apiRoutes": {}
+  },
   "cohere": {
     "routes": {
       "/blog": {
