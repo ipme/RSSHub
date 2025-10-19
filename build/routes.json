@@ -84306,6 +84306,50 @@
     "description": "::: tip\nYou can use some RSS parsing libraries (like `feedpraser` in `Python`) to receive the video update messages and download them automatically\n:::",
     "lang": "ja"
   },
+  "ornl": {
+    "routes": {
+      "/all-news": {
+        "path": "/all-news",
+        "name": "All News",
+        "url": "www.ornl.gov",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/ornl/all-news",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ornl.gov/all-news"
+            ],
+            "target": "/all-news"
+          }
+        ],
+        "view": 0,
+        "location": "all-news.ts",
+        "module": "() => import('@/routes/ornl/all-news.ts')"
+      }
+    },
+    "name": "Oak Ridge National Laboratory",
+    "apiRoutes": {},
+    "url": "ornl.gov",
+    "categories": [
+      "government"
+    ],
+    "description": "",
+    "lang": "en"
+  },
   "oschina": {
     "routes": {
       "/column/:id": {
