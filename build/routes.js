@@ -25607,12 +25607,25 @@ export default {
         ],
         "example": "/cjlu/yjsy/yjstz",
         "parameters": {
-          "cate": "订阅的类型，支持 yjstz（研究生通知）和 jstz（教师通知）"
+          "cate": {
+            "description": "订阅的类型，支持 yjstz（研究生通知）和 jstz（教师通知）",
+            "default": "yjstz",
+            "options": [
+              {
+                "label": "教师通知",
+                "value": "jstz"
+              },
+              {
+                "label": "研究生通知",
+                "value": "yjstz"
+              }
+            ]
+          }
         },
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
           "supportRadar": true,
           "supportBT": false,
           "supportPodcast": false,
