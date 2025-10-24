@@ -81904,7 +81904,7 @@ export default {
         "module": () => import('@/routes/npr/full.ts')
       }
     },
-    "name": "National Public Radio",
+    "name": "NPR (National Public Radio)",
     "apiRoutes": {},
     "url": "npr.org",
     "lang": "en"
