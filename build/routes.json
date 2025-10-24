@@ -5744,7 +5744,7 @@
         "module": "() => import('@/routes/abc/index.ts')"
       }
     },
-    "name": "ABC News",
+    "name": "ABC News (Australian Broadcasting Corporation)",
     "apiRoutes": {},
     "url": "abc.net.au",
     "lang": "en"
@@ -57464,7 +57464,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "期刊",
+        "name": "回归线",
         "url": "aneot.arktca.com",
         "maintainers": [
           "Bendancom"
@@ -57476,7 +57476,7 @@
             ]
           }
         ],
-        "description": "期刊《回归线》 | 泰拉创作者联合会",
+        "description": "明日方舟期刊《回归线》 | 泰拉创作者联合会",
         "location": "arknights/arktca.ts",
         "module": "() => import('@/routes/hypergryph/arknights/arktca.ts')"
       },
