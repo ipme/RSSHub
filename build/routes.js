@@ -36349,6 +36349,178 @@ export default {
   },
   "eastmoney": {
     "routes": {
+      "/gerenzhongxin/cfh/:uid": {
+        "path": "/gerenzhongxin/cfh/:uid",
+        "categories": [
+          "finance"
+        ],
+        "view": 0,
+        "example": "/eastmoney/gerenzhongxin/cfh/2922094262312522",
+        "parameters": {
+          "uid": "用户id,即用户主页网址末尾的数字"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "guba.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "caifuhao.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "i.eastmoney.com/:uid"
+            ],
+            "target": "/gerenzhongxin/cfh/:uid"
+          }
+        ],
+        "name": "个人中心长文",
+        "maintainers": [
+          "AwesomeDog"
+        ],
+        "location": "gerenzhongxin/cfh.ts",
+        "module": () => import('@/routes/eastmoney/gerenzhongxin/cfh.ts')
+      },
+      "/gerenzhongxin/gather/:uid": {
+        "path": "/gerenzhongxin/gather/:uid",
+        "categories": [
+          "finance"
+        ],
+        "view": 0,
+        "example": "/eastmoney/gerenzhongxin/gather/2922094262312522",
+        "parameters": {
+          "uid": "用户id,即用户主页网址末尾的数字"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "guba.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "caifuhao.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "i.eastmoney.com/:uid"
+            ],
+            "target": "/gerenzhongxin/gather/:uid"
+          }
+        ],
+        "name": "个人中心所有活动",
+        "maintainers": [
+          "AwesomeDog"
+        ],
+        "location": "gerenzhongxin/gather.ts",
+        "module": () => import('@/routes/eastmoney/gerenzhongxin/gather.ts')
+      },
+      "/gerenzhongxin/guba/:uid": {
+        "path": "/gerenzhongxin/guba/:uid",
+        "categories": [
+          "finance"
+        ],
+        "view": 0,
+        "example": "/eastmoney/gerenzhongxin/guba/2922094262312522",
+        "parameters": {
+          "uid": "用户id,即用户主页网址末尾的数字"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "guba.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "caifuhao.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "i.eastmoney.com/:uid"
+            ],
+            "target": "/gerenzhongxin/guba/:uid"
+          }
+        ],
+        "name": "个人中心帖子",
+        "maintainers": [
+          "AwesomeDog"
+        ],
+        "location": "gerenzhongxin/guba.ts",
+        "module": () => import('@/routes/eastmoney/gerenzhongxin/guba.ts')
+      },
+      "/gerenzhongxin/trpl/:uid": {
+        "path": "/gerenzhongxin/trpl/:uid",
+        "categories": [
+          "finance"
+        ],
+        "view": 0,
+        "example": "/eastmoney/gerenzhongxin/trpl/2922094262312522",
+        "parameters": {
+          "uid": "用户id,即用户主页网址末尾的数字"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "guba.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "caifuhao.eastmoney.com"
+            ]
+          },
+          {
+            "source": [
+              "i.eastmoney.com/:uid"
+            ],
+            "target": "/gerenzhongxin/trpl/:uid"
+          }
+        ],
+        "name": "个人中心评论",
+        "maintainers": [
+          "AwesomeDog"
+        ],
+        "location": "gerenzhongxin/trpl.ts",
+        "module": () => import('@/routes/eastmoney/gerenzhongxin/trpl.ts')
+      },
       "/report/:category": {
         "path": "/report/:category",
         "categories": [
@@ -44343,12 +44515,126 @@ export default {
         "location": "notifications.ts",
         "module": () => import('@/routes/github/notifications.ts')
       },
+      "/org_event/:org/:types?": {
+        "path": "/org_event/:org/:types?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/github/org_event/RSSNext",
+        "view": 5,
+        "parameters": {
+          "org": "Organization name",
+          "types": {
+            "description": "Event types to include, comma separated",
+            "default": "all",
+            "options": [
+              {
+                "label": "All events",
+                "value": "all"
+              },
+              {
+                "label": "Create events",
+                "value": "create"
+              },
+              {
+                "label": "Delete events",
+                "value": "delete"
+              },
+              {
+                "label": "Fork events",
+                "value": "fork"
+              },
+              {
+                "label": "Issue create events",
+                "value": "issue"
+              },
+              {
+                "label": "Issue comment events",
+                "value": "issuecomm"
+              },
+              {
+                "label": "Member events",
+                "value": "member"
+              },
+              {
+                "label": "Pull request events",
+                "value": "pr"
+              },
+              {
+                "label": "Pull request review comment events",
+                "value": "prcomm"
+              },
+              {
+                "label": "Pull request review events",
+                "value": "prrev"
+              },
+              {
+                "label": "Public events",
+                "value": "public"
+              },
+              {
+                "label": "Push events",
+                "value": "push"
+              },
+              {
+                "label": "Release events",
+                "value": "release"
+              },
+              {
+                "label": "Watch events (stars)",
+                "value": "star"
+              },
+              {
+                "label": "Wiki item create or update events",
+                "value": "wiki"
+              },
+              {
+                "label": "Commit comment events",
+                "value": "cmcomm"
+              },
+              {
+                "label": "Discussion events",
+                "value": "discussion"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "optional": true,
+              "description": "GitHub access token to avoid access limit"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/orgs/:org"
+            ],
+            "target": "/org_event/:org"
+          }
+        ],
+        "name": "Organization Event",
+        "maintainers": [
+          "mslxl"
+        ],
+        "location": "org-event.ts",
+        "module": () => import('@/routes/github/org-event.ts')
+      },
       "/feed/:user/:types?": {
         "path": "/feed/:user/:types?",
         "categories": [
           "programming"
         ],
         "example": "/github/feed/yihong0618/star,release,pr",
+        "view": 5,
         "parameters": {
           "user": "GitHub username",
           "types": {
@@ -44506,6 +44792,120 @@ export default {
         ],
         "location": "pulse.ts",
         "module": () => import('@/routes/github/pulse.ts')
+      },
+      "/repo_event/:owner/:repo/:types?": {
+        "path": "/repo_event/:owner/:repo/:types?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/github/repo_event/DIYgod/RSSHub",
+        "view": 5,
+        "parameters": {
+          "owner": "Username or organization name",
+          "repo": "Repository name",
+          "types": {
+            "description": "Event types to include, comma separated",
+            "default": "all",
+            "options": [
+              {
+                "label": "All events",
+                "value": "all"
+              },
+              {
+                "label": "Create events",
+                "value": "create"
+              },
+              {
+                "label": "Delete events",
+                "value": "delete"
+              },
+              {
+                "label": "Fork events",
+                "value": "fork"
+              },
+              {
+                "label": "Issue create events",
+                "value": "issue"
+              },
+              {
+                "label": "Issue comment events",
+                "value": "issuecomm"
+              },
+              {
+                "label": "Member events",
+                "value": "member"
+              },
+              {
+                "label": "Pull request events",
+                "value": "pr"
+              },
+              {
+                "label": "Pull request review comment events",
+                "value": "prcomm"
+              },
+              {
+                "label": "Pull request review events",
+                "value": "prrev"
+              },
+              {
+                "label": "Public events",
+                "value": "public"
+              },
+              {
+                "label": "Push events",
+                "value": "push"
+              },
+              {
+                "label": "Release events",
+                "value": "release"
+              },
+              {
+                "label": "Watch events (stars)",
+                "value": "star"
+              },
+              {
+                "label": "Wiki item create or update events",
+                "value": "wiki"
+              },
+              {
+                "label": "Commit comment events",
+                "value": "cmcomm"
+              },
+              {
+                "label": "Discussion events",
+                "value": "discussion"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "optional": true,
+              "description": "GitHub access token to access private repository events"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/:owner/:repo"
+            ],
+            "target": "/repo_event/:owner/:repo"
+          }
+        ],
+        "name": "Repository Event",
+        "maintainers": [
+          "mslxl"
+        ],
+        "location": "repo-event.ts",
+        "module": () => import('@/routes/github/repo-event.ts')
       },
       "/repos/:user/:type?/:sort?": {
         "path": "/repos/:user/:type?/:sort?",
@@ -44730,6 +45130,119 @@ export default {
         "url": "github.com/trending",
         "location": "trending.ts",
         "module": () => import('@/routes/github/trending.ts')
+      },
+      "/user_event/:username/:types?": {
+        "path": "/user_event/:username/:types?",
+        "categories": [
+          "programming"
+        ],
+        "example": "/github/user_event/mslxl",
+        "view": 5,
+        "parameters": {
+          "username": "Username",
+          "types": {
+            "description": "Event types to include, comma separated",
+            "default": "all",
+            "options": [
+              {
+                "label": "All events",
+                "value": "all"
+              },
+              {
+                "label": "Create events",
+                "value": "create"
+              },
+              {
+                "label": "Delete events",
+                "value": "delete"
+              },
+              {
+                "label": "Fork events",
+                "value": "fork"
+              },
+              {
+                "label": "Issue create events",
+                "value": "issue"
+              },
+              {
+                "label": "Issue comment events",
+                "value": "issuecomm"
+              },
+              {
+                "label": "Member events",
+                "value": "member"
+              },
+              {
+                "label": "Pull request events",
+                "value": "pr"
+              },
+              {
+                "label": "Pull request review comment events",
+                "value": "prcomm"
+              },
+              {
+                "label": "Pull request review events",
+                "value": "prrev"
+              },
+              {
+                "label": "Public events",
+                "value": "public"
+              },
+              {
+                "label": "Push events",
+                "value": "push"
+              },
+              {
+                "label": "Release events",
+                "value": "release"
+              },
+              {
+                "label": "Watch events (stars)",
+                "value": "star"
+              },
+              {
+                "label": "Wiki item create or update events",
+                "value": "wiki"
+              },
+              {
+                "label": "Commit comment events",
+                "value": "cmcomm"
+              },
+              {
+                "label": "Discussion events",
+                "value": "discussion"
+              }
+            ]
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "optional": true,
+              "description": "GitHub access token to access private repository events"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/:username"
+            ],
+            "target": "/user_event/:username"
+          }
+        ],
+        "name": "User Event",
+        "maintainers": [
+          "mslxl"
+        ],
+        "location": "user-event.ts",
+        "module": () => import('@/routes/github/user-event.ts')
       },
       "/wiki/:user/:repo/:page?": {
         "path": "/wiki/:user/:repo/:page?",
