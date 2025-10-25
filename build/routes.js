@@ -82001,6 +82001,43 @@ export default {
     "url": "www.ntdtv.com",
     "lang": "zh-CN"
   },
+  "ntrblog": {
+    "routes": {
+      "/articles": {
+        "path": "/articles",
+        "categories": [
+          "anime"
+        ],
+        "example": "/ntrblog/articles",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "nsfw": true
+        },
+        "name": "Articles",
+        "maintainers": [
+          "keocheung"
+        ],
+        "radar": [
+          {
+            "source": [
+              "ntrblog.com"
+            ]
+          }
+        ],
+        "location": "articles.ts",
+        "module": () => import('@/routes/ntrblog/articles.ts')
+      }
+    },
+    "name": "NTR BLOG（寝取られブログ）",
+    "apiRoutes": {},
+    "url": "ntrblog.com",
+    "lang": "ja"
+  },
   "nua": {
     "routes": {
       "/dc/:type": {
